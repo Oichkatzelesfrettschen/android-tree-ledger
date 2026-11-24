@@ -1,0 +1,4 @@
+Open pull requests on owner device repositories (read 2026-11-24 22:51Z with gh pr list):
+- Oichkatzelesfrettschen/android_device_lge_bullhead #1 head codex/bullhead-product-dependencies, MERGEABLE: fix(bullhead): align Android 15 product and nanohub contracts
+- Oichkatzelesfrettschen/android_kernel_htc_msm8974 #2 head f2fs-forced-unmount-writeback-race, MERGEABLE: WIP, not verified: f2fs unmount-writeback race (row 20a)
+- Oichkatzelesfrettschen/android_kernel_htc_a11 #71 head codex/apr-read-done-bounds-observer, MERGEABLE: Bound APR receive and observe checked DSP READ_DONE replies

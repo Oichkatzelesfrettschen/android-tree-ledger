@@ -1,0 +1,11 @@
+tree	projects	pristine	candidate	unreadable	orphan_gitdirs	object_reference	manifest_remote	manifest_local_commits	manifest_dirty	local_manifests	plan
+twrp/twrp-12.1	249	247	2	0	0	-	https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git	0	0	-	retire
+twrp/twrp-11	382	379	3	0	0	-	https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git	0	0	a11chl.xml	retire
+twrp14-m8	658	657	1	0	0	-	https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git	0	1	-	retire
+tuna/lineage-18.1	870	861	9	0	0	-	https://github.com/LineageOS/android.git	0	0	tuna.xml	retire
+tuna/lineage-19.1	1143	1136	7	0	0	-	https://github.com/LineageOS/android.git	0	0	tuna.xml	retire
+desire510-18.1	842	817	3	22	26	trees/tuna/lineage-18.1	https://github.com/LineageOS/android	0	0	a11.xml	retire
+desire510-19.1	1153	1142	11	0	0	-	https://github.com/LineageOS/android	0	0	a11.xml	retire
+bullhead/lineage-22.2	1150	1150	0	0	0	-	https://github.com/LineageOS/android.git	1	0	bullhead.xml	retire
+m8/lineage-22.2	1162	1154	8	0	2	-	https://github.com/LineageOS/android.git	0	0	a11.xml m8.xml m8.xml.orig	retire
+tb132fu/android17	1086	-	-	-	-	trees/m8/lineage-22.2 (785 alternates into .repo/project-objects, 1 into .repo/manifests.git)	-	-	-	-	kept (live tree; not inventoried)

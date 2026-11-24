@@ -1,0 +1,38 @@
+path	fetch_remote	head	shallow	local_commits	dirty	untracked	branches	note
+bullhead/device_lge_bullhead	github.com/nexus5x-dev/device_lge_bullhead.git	5fbaea520b	false	0	0	0	codex/bullhead-product-dependencies,lineage-21.0,	-
+bullhead/donors/device_google_contexthub	github.com/LineageOS/android_device_google_contexthub.git	60fe600841	true	0	0	0	lineage-22.2,	-
+bullhead/donors/device_huawei_angler	github.com/LineageOS-Nexus-6P/android_device_huawei_angler.git	de673dadd9	false	0	0	0	lineage-22.2,	-
+bullhead/donors/hardware_qcom_display	github.com/LineageOS-Nexus-6P/hardware_qcom_display.git	547dcd0bbe	false	0	0	0	lineage-23.0-caf-msm8994,	-
+bullhead/donors/hardware_qcom_gps	github.com/LineageOS/android_hardware_qcom_gps.git	df8f5e3160	true	0	0	0	lineage-22.2,	-
+bullhead/donors/hardware_qcom_media	github.com/LineageOS-Nexus-6P/hardware_qcom_media.git	e76c745c52	false	0	0	0	lineage-23.0-caf-msm8994,	-
+bullhead/donors/kernel_oneplus_msm8994	github.com/davigamer987/kernel_oneplus_msm8994.git	0dce5ba278	false	0	0	0	lineage-22.2,	-
+bullhead/donors/legacy_qcom_common	github.com/Oichkatzelesfrettschen/android_hardware_qcom-caf_common.git	7dbb91aa3a	true	0	0	0	lineage-22.2,	-
+bullhead/donors/nexus6p_patches	github.com/LineageOS-Nexus-6P/nexus6p_patches.git	c296ef2398	false	0	0	0	lineage-22.2,	-
+bullhead/donors/official_device_lge_bullhead	github.com/LineageOS/android_device_lge_bullhead.git	5cef16f959	false	0	0	0	lineage-16.0,	-
+bullhead/donors/ul_hardware_qcom_audio	github.com/LineageOS-UL/android_hardware_qcom_audio.git	d6ad50eda8	true	0	0	0	lineage-21.0-caf-msm8994,	-
+bullhead/donors/ul_hardware_qcom_display	github.com/LineageOS-UL/android_hardware_qcom_display.git	58166f3621	true	0	0	0	lineage-21.0-caf-msm8994,	-
+bullhead/donors/ul_hardware_qcom_gps	github.com/LineageOS-UL/android_hardware_qcom_gps.git	bf8d5049a6	true	0	0	0	lineage-21.0,	-
+bullhead/donors/ul_hardware_qcom_media	github.com/LineageOS-UL/android_hardware_qcom_media.git	f21b36368d	true	0	0	0	lineage-21.0-caf-msm8994,	-
+bullhead/kernel_lge_bullhead	github.com/nexus5x-dev/kernel_lge_bullhead.git	995f521baf	false	0	0	0	lineage-21.0,	-
+bullhead/platform_manifest	github.com/LineageOS/android.git	98c181d61f	false	0	0	0	lineage-22.2,	-
+bullhead/timekeep	github.com/LineageOS/android_hardware_sony_timekeep.git	858c544d1a	false	0	0	0	lineage-17.1,	-
+bullhead/vendor_lge_bullhead	github.com/nexus5x-dev/vendor_lge_bullhead.git	ddf72b76c7	false	0	0	0	lineage-21.0,	-
+desire510-kernel	github.com/Oichkatzelesfrettschen/android_kernel_htc_a11	8d6f27ecec	false	6	0	0	codex/apr-read-done-bounds-observer,codex/apr-signed-receive-length,codex/perf-software-event-preemption-balance,codex/proc-fdinfo-inode-type,fix/aac-dsp-format-status,integration/a11-successor-5,integration/a11-vidc-hier-p-static-alloc,kernel/a11-hz300-drawer-latency,lineage-22.2,	-
+donors/genio-apusys-driver-android13	gitlab.com/mediatek/aiot/bsp/mtk-apusys-driver.git	a7b20bc26a	true	0	0	0	android13,	-
+donors/genio-apusys-driver-mt8195	gitlab.com/mediatek/aiot/bsp/mtk-apusys-driver.git	a8e66deb99	true	0	0	0	mt8195,	-
+donors/genio-apusys-firmware-mt8195	gitlab.com/mediatek/aiot/bsp/mtk-apusys-firmware.git	2502c4bf3e	true	0	0	0	mt8195,	-
+donors/google-msm-lenok	android.googlesource.com/kernel/msm	2e918211ea	true	0	46069	0	android-msm-lenok-3.10-marshmallow-mr1-wear-release,	working tree emptied (all tracked files deleted)
+donors/htc-a3ul	github.com/Bdaman80/android_kernel_htc_a3ul	d259a7a862	false	1083	42384	0	a11-ref,master,	working tree emptied (all tracked files deleted, none modified or added); branch a11-ref = desire510-kernel lineage-22.2 8d6f27ecec
+donors/htc-memul	github.com/bilalliberty/android_kernel_htc_memul	f7cb5c07dd	false	1083	42013	0	a11-ref,master,	working tree emptied (all tracked files deleted, none modified or added); branch a11-ref = desire510-kernel lineage-22.2 8d6f27ecec
+donors/lge-msm8226	github.com/LineageOS/android_kernel_lge_msm8226	bf75627949	false	1083	43163	0	a11-ref,cm-14.1,	working tree emptied (all tracked files deleted, none modified or added); branch a11-ref = desire510-kernel lineage-22.2 8d6f27ecec
+donors/motorola-msm8226	github.com/LineageOS/android_kernel_motorola_msm8226	22bc4ed7f4	false	1083	42218	0	a11-ref,cm-14.1,	working tree emptied (all tracked files deleted, none modified or added); branch a11-ref = desire510-kernel lineage-22.2 8d6f27ecec
+donors/oneplus-mt6893	github.com/OnePlusOSS/android_kernel_oneplus_mt6893.git	48f1797695	true	0	0	0	oneplus/MT6893_R_11.0,	-
+donors/samsung-msm8226	github.com/LineageOS/android_kernel_samsung_msm8226	3fa1853ed5	false	1083	46166	0	a11-ref,lineage-18.1,	working tree emptied (all tracked files deleted, none modified or added); branch a11-ref = desire510-kernel lineage-22.2 8d6f27ecec
+donors/xiaomi-ares-mt6893	github.com/MiCode/Xiaomi_Kernel_OpenSource.git	49c02c2de1	true	0	0	0	ares-r-oss,	-
+m8/android_kernel_htc_msm8974	github.com/TARKZiM/android_kernel_htc_msm8974.git	b277ff53b8	false	6	0	0	codex/irq-work-cpu-dying-drain,codex/perf-software-event-preemption-balance,f2fs-unmount-race-on-0ecf0b9d,fix/perf-offline-event-ownership,lineage-21.0,lineage-22.2-m8,test/m8-wdi-postassoc-ramboot,	-
+tb132fu/android_device_lenovo_tb132fu	github.com/Oichkatzelesfrettschen/android_device_lenovo_tb132fu.git	95c1f8a5e0	true	0	0	0	purepixel17-tb132fu-r6,	live tb132fu tree, kept
+tb132fu/purepixel17-tb132fu-platform	github.com/error311/purepixel17-tb132fu-platform.git	f4c5dce830	true	3	0	0	purepixel17-tb132fu-r6,tb132fu/own-build-r7,tb132fu/own-build-r7-abi,	live tb132fu tree, kept
+tb132fu/tb132fu-kernel	github.com/Oichkatzelesfrettschen/tb132fu-kernel.git	3c01eb3d50	true	1	0	0	tb132fu-purepixel17-r6-k52,tb132fu/apu-qos-bound-guard,tb132fu/vibrator-amplitude,	live tb132fu tree, kept
+toolchains/ruuveal	github.com/kmdm/ruuveal	714344ef22	false	0	0	1	master,	-
+tuna/android_hardware_ti_omap4	github.com/LineageOS/android_hardware_ti_omap4.git	d8470c0557	false	0	0	1	cm-14.1,lineage-18.1,	-
+tuna/android_kernel_samsung_tuna	github.com/zeelog/android_kernel_samsung_tuna.git	f87a5d76e8	false	0	0	0	cm-14.1,feature/tuna-clang-thinlto-kbuild,lineage-18.1,random/omap4-boot-entropy,rproc-autosuspend-watchdog,	-

@@ -1,0 +1,37 @@
+== bullhead_lineage-22.2
+manifests head=98c181d61f032a69c817835238cbb40fd049100e local=1 dirty=0 url=https://github.com/LineageOS/android.git
+local_manifests: bullhead.xml 
+reference: -
+== desire510-18.1
+manifests head=88e370827501474db8f1905128fdea2e8128ead4 local=0 dirty=0 url=https://github.com/LineageOS/android
+local_manifests: a11.xml 
+reference: trees/tuna/lineage-18.1
+== desire510-19.1
+manifests head=dd9a9d84ce7005ff60e5c9f776368c2f3e2fd9ca local=0 dirty=0 url=https://github.com/LineageOS/android
+local_manifests: a11.xml 
+reference: -
+== m8_lineage-22.2
+manifests head=98c181d61f032a69c817835238cbb40fd049100e local=0 dirty=0 url=https://github.com/LineageOS/android.git
+local_manifests: a11.xml m8.xml m8.xml.orig 
+reference: -
+== tuna_lineage-18.1
+manifests head=88e370827501474db8f1905128fdea2e8128ead4 local=0 dirty=0 url=https://github.com/LineageOS/android.git
+local_manifests: tuna.xml 
+reference: -
+== tuna_lineage-19.1
+manifests head=dd9a9d84ce7005ff60e5c9f776368c2f3e2fd9ca local=0 dirty=0 url=https://github.com/LineageOS/android.git
+local_manifests: tuna.xml 
+reference: -
+== twrp14-m8
+manifests head=cb31ddec08f495d3f70631b22140642d0045ba0d local=0 dirty=1 url=https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git
+?? m8-v15.xml
+local_manifests: 
+reference: -
+== twrp_twrp-11
+manifests head=48a1ac925fb112f09cfa6313932726b20125170d local=0 dirty=0 url=https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git
+local_manifests: a11chl.xml 
+reference: -
+== twrp_twrp-12.1
+manifests head=6dc117d9cbd08430daa16db2013560e1c4017fa8 local=0 dirty=0 url=https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git
+local_manifests: 
+reference: -
