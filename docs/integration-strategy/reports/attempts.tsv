@@ -1,0 +1,4 @@
+reviewer	model	verdict	reason
+opencode	opencode-go/glm-5.3	not run	allowance gate: weekly window 79 percent at the 79 percent ceiling (2026-11-24 22:53Z); the owner chose agy plus the Advisor only
+opencode	opencode-go/deepseek-v4-pro	not run	same allowance reading; owner choice as above
+agy	gemini-4-neon-xhigh	report	123 lines; working tree unchanged after the run (git status --short empty)
