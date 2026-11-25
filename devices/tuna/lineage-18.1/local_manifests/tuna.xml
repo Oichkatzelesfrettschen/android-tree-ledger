@@ -30,13 +30,6 @@
   <remove-project name="LineageOS/android_hardware_interfaces" />
   <project path="hardware/interfaces" name="android_hardware_interfaces" remote="oich" revision="bac8a8d7a5be2d0d7e39036224c1f7ce8dc333bd" upstream="lineage-18.1" />
   <project path="hardware/ti/omap4" name="android_hardware_ti_omap4" remote="oich" revision="c0dd1280da6cb4db9e7a64cb8f4a88d1b52bf2bc" upstream="lineage-18.1" />
-  <!-- vendor/ti and vendor/samsung are private repositories: the proprietary
-       files of Unlegacy-Android/proprietary_vendor_ti (stable) and the
-       maguro and tuna directories of TheMuppets/proprietary_vendor_samsung
-       (cm-14.1), each with the tuna build's blob-packaging commits on top.
-       Fetching them needs the account's GitHub credentials. -->
-  <project path="vendor/ti" name="proprietary_vendor_ti" remote="oich" revision="ca92041c1501bee1c34e76726960979645f7772c" upstream="stable" />
-  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="oich" revision="0d5f69f430a292ff710b25eeec33ec1ea5a98dd1" upstream="lineage-18.1" />
   <!-- EXIF writer for the OMAP4 camera HAL; AOSP dropped jhead in Android 10.
        Base platform/external/jhead 9c6e507bb38e1cede54c392058fd6ba42f0ef0a7
        plus the -Werror fix that drops the statics only jhead.c's main() reads. -->
@@ -116,8 +109,4 @@
   <project path="art" name="android_art" remote="oich" revision="8e796f1cab099a41ef03167d404d02652147b413" upstream="lineage-18.1-tuna" groups="pdk" />
   <remove-project name="LineageOS/android_system_netd" />
   <project path="system/netd" name="android_system_netd" remote="oich" revision="2964c5e420385616eb4181f94f84756fa2cdb6d7" upstream="lineage-18.1-tuna" groups="pdk" />
-
-  <!-- microG GmsCore and Companion prebuilts; the APKs are Git LFS objects,
-       so the checkout needs a repository-local git lfs install and pull. -->
-  <project path="vendor/microg" name="android_vendor_microg" remote="oich" revision="621758c7687491ed78e560f24dd4b50e8b7863f1" upstream="lineage-18.1" />
 </manifest>

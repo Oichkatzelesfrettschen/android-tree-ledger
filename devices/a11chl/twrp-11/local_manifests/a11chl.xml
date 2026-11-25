@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="ohk-gh" fetch="https://github.com/" />
-  <project path="device/htc/a11chl" name="Oichkatzelesfrettschen/android_device_htc_a11chl" remote="ohk-gh" revision="0d25f478a4652814f5a0816169ff7853e64110b3" />
 </manifest>

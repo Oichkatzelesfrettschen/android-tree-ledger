@@ -88,8 +88,4 @@
 
   <project path="device/htc/a11" name="android_device_htc_a11" remote="oich"
            revision="59bc2cc343ca26eea498a43b0ac08573f4fe4a0f" upstream="lineage-18.1" />
-
-  <project path="vendor/htc/a11chl" name="proprietary_vendor_htc_a11chl"
-           remote="oich" revision="6a8f4349de1eff09a5045d5f922a74ea277bd54b"
-           upstream="lineage-18.1" />
 </manifest>

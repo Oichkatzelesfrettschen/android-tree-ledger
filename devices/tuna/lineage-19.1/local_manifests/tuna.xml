@@ -46,8 +46,5 @@
   <project path="device/samsung/maguro" name="android_device_samsung_maguro" remote="oich" revision="fa9ff4b31bdc1e8ef7d5c758d0daf6382870c2c4" upstream="lineage-19.1" />
   <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="oich" revision="3450fee356ba09de391104416a546e10b26cd4a0" upstream="feature/tuna-clang-thinlto-kbuild" clone-depth="1" />
   <project path="hardware/ti/omap4" name="android_hardware_ti_omap4" remote="oich" revision="9568242dd0b049e8263996ea484e5db2e0de5d83" upstream="lineage-19.1" />
-  <project path="vendor/ti" name="proprietary_vendor_ti" remote="oich" revision="ca92041c1501bee1c34e76726960979645f7772c" upstream="stable" />
-  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="oich" revision="0d5f69f430a292ff710b25eeec33ec1ea5a98dd1" upstream="lineage-18.1" />
-  <project path="vendor/microg" name="android_vendor_microg" remote="oich" revision="896d316340800b50d4b9816d677cf311115481dd" upstream="lineage-19.1" />
   <project path="external/jhead" name="android_external_jhead" remote="oich" revision="27ecb75f03f8a6c1b1a2f2ff240e918d2cb78754" upstream="lineage-18.1" />
 </manifest>
