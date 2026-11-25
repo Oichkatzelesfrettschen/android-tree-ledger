@@ -20,7 +20,7 @@ This repository records how to recreate nine retired Android source trees from G
 | devices/tuna/lineage-19.1 | tuna/lineage-19.1 | maguro, toro (tuna) |
 | devices/a11/lineage-18.1 | desire510-18.1 | a11 (HTC Desire 510) |
 | devices/a11/lineage-19.1 | desire510-19.1 | a11 |
-| devices/a11/lineage-22.2 | desire510-kernel (standalone) | a11 kernel |
+| devices/a11/lineage-22.2 | a11/lineage-22.2 (pinned.xml, with the private overlay); desire510-kernel (standalone) | a11 22.2 product and kernel |
 | devices/m8/twrp-14.1 | twrp14-m8 | m8 recovery |
 | devices/a11chl/twrp-11 | twrp/twrp-11 | a11chl recovery |
 | devices/twrp-generic/twrp-12.1 | twrp/twrp-12.1 | generic recovery |
