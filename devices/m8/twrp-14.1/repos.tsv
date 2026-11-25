@@ -1,2 +1,2 @@
 source_tree	path	source_ref	owner_repository	pushed_ref	sha	verified
-twrp14-m8	bootable/recovery	HEAD	Oichkatzelesfrettschen/android_bootable_recovery-m8-twrp	dev/m8/twrp-14.1	caeb2b74f74f651d095033cff54f7b4803a637e1	ls-remote tip
+twrp14-m8	bootable/recovery	HEAD	Oichkatzelesfrettschen/android_bootable_recovery-m8-twrp	dev/m8/twrp-14.1	596f3de221d39579cea81567b71b6edb14d3c1d5	ls-remote tip

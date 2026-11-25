@@ -270,7 +270,7 @@ PASS-tip	bionic	https://github.com/Oichkatzelesfrettschen/android_bionic	refs/he
 PASS-compare	lineage/scripts	https://github.com/LineageOS/scripts	refs/heads/main	be7611c989852c9fe66b539c9573099b4c8cf923
 PASS-tip	device/htc/a11	https://github.com/Oichkatzelesfrettschen/android_device_htc_a11	refs/heads/lineage-19.1	f734050671fb88ed068145828e2c9cea88f4d7dc
 PASS-compare	lineage/wiki	https://github.com/LineageOS/lineage_wiki	refs/heads/main	902bd577711a7b037b36b47fad5a0e1f4725b0e3
-PASS-tip	frameworks/av	https://github.com/Oichkatzelesfrettschen/android_frameworks_av	refs/heads/dev/a11/lineage-19.1	c1c7034e960f5ae8637364a42fdebd640e03d4c4
+PASS-tip	frameworks/av	https://github.com/Oichkatzelesfrettschen/android_frameworks_av	refs/heads/dev/a11/lineage-19.1	0feff46b0dceeeb785e1f3127e23e6bc8f260f59
 PASS-tip	hardware/qcom-caf/msm8974/audio	https://github.com/Oichkatzelesfrettschen/android_hardware_qcom_audio	refs/heads/dev/a11/lineage-19.1	c95116ff339c8a6d492de2bcd0fafff607ae76ba
 PASS-tip	frameworks/base	https://github.com/Oichkatzelesfrettschen/android_frameworks_base	refs/heads/dev/a11/lineage-19.1	687ef4d0c67f87bfad35686ee24dcf177c228759
 PASS-tip	hardware/qcom-caf/msm8974/display	https://github.com/Oichkatzelesfrettschen/android_hardware_qcom_display	refs/heads/lineage-19.1-caf-msm8974	ae3213871c562e096fdc71a2c3cc0447312beff6
@@ -278,7 +278,7 @@ PASS-tip	hardware/qcom-caf/msm8974/media	https://github.com/Oichkatzelesfrettsch
 PASS-tip	hardware/ril	https://github.com/Oichkatzelesfrettschen/android_hardware_ril	refs/heads/dev/a11/lineage-19.1	b11643864a3d3368a62eeb21ab92be71649c26f9
 PASS-tip	system/netd	https://github.com/Oichkatzelesfrettschen/android_system_netd	refs/heads/dev/a11/lineage-19.1	f1234fb0d139d061be60cef497d22f544fdf48db
 PASS-tip	system/bpf	https://github.com/Oichkatzelesfrettschen/android_system_bpf	refs/heads/dev/a11/lineage-19.1	a6cee90339d714ec89a4e7529817661dff83629d
-PASS-compare	device/htc/msm8226-common	https://github.com/Oichkatzelesfrettschen/android_device_htc_msm8226-common	refs/heads/lineage-19.1	6a916c8b6027d2e3ee4b05dc9a6328227e89aef2
+PASS-compare	device/htc/msm8226-common	https://github.com/Oichkatzelesfrettschen/android_device_htc_msm8226-common	refs/heads/lineage-19.1	a45257a4f7bba4e5cf6e810c82636e0e43da7511
 PASS-tip	device/generic/arm64	https://android.googlesource.com/device/generic/arm64	refs/tags/android-12.1.0_r22	c3df6ff97a7cc229da9e4e67840660a76bbcfcc1
 PASS-tip	device/generic/armv7-a-neon	https://android.googlesource.com/device/generic/armv7-a-neon	refs/tags/android-12.1.0_r22	dd835701bc94e29c67fbf272880063058a800bf0
 PASS-tip	device/generic/art	https://android.googlesource.com/device/generic/art	refs/tags/android-12.1.0_r22	b6e1d643c5dc8ada2215947a413a1425c8ca67dd

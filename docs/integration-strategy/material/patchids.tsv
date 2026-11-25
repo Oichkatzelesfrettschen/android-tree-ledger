@@ -1,7 +1,7 @@
 tree	path	commit	patch_id	subject
 desire510-18.1	frameworks/base	12d5f25a9bd019cff0a1857cbae3b211912b1514	17f98dfaf79a1ddcd3e87f51d97057dac281a5f6	gnss: Name the izatcloud XTRA servers in gps_debug.conf (#14)
 desire510-19.1	build/soong	8310059358814b6a70f1c41b201497c5335792ed	-	Merge pull request #7 from Oichkatzelesfrettschen/fix/javac-shard-own-header-first
-desire510-19.1	frameworks/av	c1c7034e960f5ae8637364a42fdebd640e03d4c4	-	Merge pull request #6 from Oichkatzelesfrettschen/lineage-19.1-legacy-kernel
+desire510-19.1	frameworks/av	0feff46b0dceeeb785e1f3127e23e6bc8f260f59	-	Merge pull request #6 from Oichkatzelesfrettschen/lineage-19.1-legacy-kernel
 desire510-19.1	frameworks/base	687ef4d0c67f87bfad35686ee24dcf177c228759	-	Merge pull request #18 from Oichkatzelesfrettschen/lineage-19.1-legacy-kernel
 desire510-19.1	hardware/qcom-caf/msm8974/audio	c95116ff339c8a6d492de2bcd0fafff607ae76ba	-	Merge pull request #7 from Oichkatzelesfrettschen/feature/a11-lineage-19.1-caf-msm8974
 desire510-19.1	hardware/qcom-caf/msm8974/media	fceddfe365e41ba2ef572c295978d59d75be382b	-	Merge pull request #6 from Oichkatzelesfrettschen/feature/a11-lineage-19.1-caf-msm8974
@@ -18,14 +18,14 @@ desire510-19.1	system/netd	350dbdb697eac51310e48044ed57933944617cd5	14feb7414abf
 desire510-19.1	system/netd	91d15466cefc308773963707eeaff790d0a0ab9b	-	[automerger skipped] Merge stage-aosp-sc-ts-dev before making it an upstream am: a44df5f931 -s ours am: d46b36d3f1 -s ours
 desire510-19.1	system/netd	d46b36d3f1f30be7e7aa1dea133b55d9695dd83c	a67e60895e3afd8eb28c4cbca68e50127328f259	[automerger skipped] Merge stage-aosp-sc-ts-dev before making it an upstream am: a44df5f931 -s ours
 desire510-19.1	system/netd	d603e2640042096aa7ba24669ad05ce3b0cbebdd	a67e60895e3afd8eb28c4cbca68e50127328f259	[automerger skipped] Merge ab/7633965 am: f237df3092 -s ours
-m8/lineage-22.2	device/htc/msm8226-common	63918a84e3f08b6dc7e3ee43aa7a26c5de280ea1	a1a2eab0aaef256ed8e32e83a13bbb50edc293ae	fix(media): remove unsupported Venus HEVC declaration
-m8/lineage-22.2	device/htc/msm8226-common	a5dd52d66ff5e789d11de4df3ca947433b2426d6	88394befe29f292544273473bab51b2cc781f9b3	fix(media): bound MP3 streaming and AVC sample expansion
-m8/lineage-22.2	device/htc/msm8226-common	415228a3fb2a484bfda13319958d37fbc13ba464	a1a2eab0aaef256ed8e32e83a13bbb50edc293ae	fix(media): remove unsupported Venus HEVC declaration
+m8/lineage-22.2	device/htc/msm8226-common	9603a9fc78c71ea9bbed7c1d88d417ba4662a4ed	a1a2eab0aaef256ed8e32e83a13bbb50edc293ae	fix(media): remove unsupported Venus HEVC declaration
+m8/lineage-22.2	device/htc/msm8226-common	7cf8085c804e7a53a3a7f5e16809b1143058d757	88394befe29f292544273473bab51b2cc781f9b3	fix(media): bound MP3 streaming and AVC sample expansion
+m8/lineage-22.2	device/htc/msm8226-common	937f4fecbc7f4e9f0eda76028db00436727cdb63	a1a2eab0aaef256ed8e32e83a13bbb50edc293ae	fix(media): remove unsupported Venus HEVC declaration
 m8/lineage-22.2	external/strace	7baa6d1426b9dc83bea78dd3e63ac5dbd87c4c84	8d6182df4a2f6fc006708ecd57a06a74a249d117	feat(strace): trace bounded MSM AAC buffer ownership
-m8/lineage-22.2	frameworks/av	56c60e881bbc0ced5346d9b3a8e69d4e36c66b1a	5550126607479a5fb8cb19883798de1e70e8b79c	stagefright: restore EVRC/QCELP roles in GetComponentRole()'s mime table
-m8/lineage-22.2	frameworks/av	354b49707a46a1fe29589f7be65217c589bae787	-	Merge pull request #1 from Oichkatzelesfrettschen/camera-hal1-recording-restore
-m8/lineage-22.2	frameworks/av	1f61b5f94d7c4fbccb118457511cbdfc4b5963e5	2555ee3693b063063f68ea7048fe8f4eb2739141	camera: restore HALv1 recording proxy and CameraSource metadata buffers
-m8/lineage-22.2	frameworks/av	f8a2b88bb5316d0b08f0029c1c84326be91ff6da	ca321732a4f0c6629bc2b6dc70bf994ca42d20e3	libcameraservice: copy HALv1 face metadata field by field into camera_face_t
+m8/lineage-22.2	frameworks/av	23662c2fa7f5a039911665eb3885f3d44b18e94a	5550126607479a5fb8cb19883798de1e70e8b79c	stagefright: restore EVRC/QCELP roles in GetComponentRole()'s mime table
+m8/lineage-22.2	frameworks/av	169b6673b9f4838b3c3e9dea06f313c0e6b3efcf	-	Merge pull request #1 from Oichkatzelesfrettschen/camera-hal1-recording-restore
+m8/lineage-22.2	frameworks/av	930a8a11bdaf9699d0c5c6f7cbcc5bf46fdc3d03	2555ee3693b063063f68ea7048fe8f4eb2739141	camera: restore HALv1 recording proxy and CameraSource metadata buffers
+m8/lineage-22.2	frameworks/av	d9e8eae1fdbeff3ba5aee0f297401dc23f97d64b	ca321732a4f0c6629bc2b6dc70bf994ca42d20e3	libcameraservice: copy HALv1 face metadata field by field into camera_face_t
 m8/lineage-22.2	frameworks/base	f6c61f178b942fafe097c1300afed24b6ebe6850	a2ed86e37ffd0aebe7a37cc64640adcff28b81f5	camera2 legacy: sample HAL1 recording ION buffers through an EGLImage ring
 m8/lineage-22.2	frameworks/native	fcd8ab2dc017712cf73a8cfb27e45f1447feb33a	771a392fcced88a6b841b996b901fabcae079af2	surfacetexture: discard unused buffers while preserving the GL image
 m8/lineage-22.2	hardware/qcom-caf/msm8974/media	17f955edd615d68abfb04d916119f809889f8d7d	5157ca33fdf769ebbc9eea53ae6d88a74c9a079d	fix(video): reject invalid log paths and failed mappings
@@ -46,19 +46,19 @@ tuna/lineage-18.1	vendor/samsung	a75cde505c8e690cb4a1f2357d32803f7c1f606e	4377f0
 tuna/lineage-18.1	vendor/ti	fd79492f508b981e818029ca57a4c2daac2ef078	85b4b8a4e9951691e34bf9c0bab1292fa89fb048	omap4: graphics: allow the libc-private helpers in every SGX blob
 tuna/lineage-18.1	vendor/ti	dfb50b5d68555244b1269594f3bb5eeb1b6dce02	a198f9948570481094b2acf2ff581777936b0984	omap4: graphics: declare liblog for libsrv_um and allow libc-private helpers
 tuna/lineage-18.1	vendor/ti	e239a4c1421778ea04348e0b28ee8b6d326f3cb5	0b796eaca0f60c26a3837ed87a6ad2b951ec9821	omap4: graphics: declare each SGX blob's DT_NEEDED libraries
-tuna/lineage-19.1	frameworks/av	f6bc04c46373e457bc36c366d7f7b6fabcb52c2a	6b9b0ddcce7c8237d64bab1855f55be39ba39693	test(camera): support strict Clang priority fixtures
-tuna/lineage-19.1	frameworks/av	7bff6d11cbed148920a8bbd40b261f59e082e6ed	a0ab4b64a9b6967356fc1359e93a290c8c725849	test(camera): support strict Clang shared fixtures
-tuna/lineage-19.1	frameworks/av	1c7173beb4a08170ed6284fea877ff9b4f3f41ff	fde74b81efe0574c48a70ea5143ca76b9b5455ed	fix(camera): preserve recording handle return order
-tuna/lineage-19.1	frameworks/av	f1a0bcad06d346a153f79f2d95d36611be50a1d5	a54614889adf0939c4ed2209e8cf88456440321a	fix(camera): retain listener capability through device removal
-tuna/lineage-19.1	frameworks/av	90388fffc9f88e06ce17ab66381c773c709e1d79	3272c7e14976cdd3ed35c4c28b8f1eb47366f9cf	fix(camera): preserve client lifecycle error boundaries
-tuna/lineage-19.1	frameworks/av	1d3aaf367f6597be43cbdd64f9f9397509a9528b	12048e61aab0a9508d51aea640a6fd9e151ebf51	fix(camera): bound HAL1 memory ownership through teardown
-tuna/lineage-19.1	frameworks/av	14001ce71f6f0d2e3a7f6633d8840bd918eadfcb	1436e242d460f4b7ce34c95e94eed0c124e6e1c3	fix(camera): negotiate recording mode in the default source
-tuna/lineage-19.1	frameworks/av	5a1b4d8edbe7eed1f0853265e9c8cce230a0d862	67cf9e0751245d9d7eef3f2392cef5bfdc139a58	fix(camera): restore preview state after rejected target changes
-tuna/lineage-19.1	frameworks/av	8bd675ed3b099f1d4bf1e926a99ee5ad9e8e7895	5ebf906d0e682c1bc5e99aa253363a569c827d45	fix(camera): type native metadata and retain batch handle ownership
-tuna/lineage-19.1	frameworks/av	b07da4e8cbb381e10b43097030ced58ce90653fb	4520b849bf1040324417b03debe5918ee24bda1c	fix(camera): consume recording handles returned after disconnect
-tuna/lineage-19.1	frameworks/av	66c131de71ef90c7f3df6fc993e8fa7d7b5bc762	74f4c2830155b8d6b656b5537ccfcc3fb9db76ce	fix(camera): enforce legacy priority offsets without overflow
-tuna/lineage-19.1	frameworks/av	26aab10a40778ead4c8dc710e9cc0b19e6320cc4	baeb9b8995b21a9a513408591816b6248d1e310e	fix(camera): retain preview buffer through dequeue reply
-tuna/lineage-19.1	frameworks/av	5893c4509d2e62fcb154444df941e526016f0bd5	e25854f1243beafe7665ed60a13e387235a13f9a	fix(camera): preserve recording and preview teardown ownership
+tuna/lineage-19.1	frameworks/av	307c51c8efd32b54ed8724867961541a8a487689	6b9b0ddcce7c8237d64bab1855f55be39ba39693	test(camera): support strict Clang priority fixtures
+tuna/lineage-19.1	frameworks/av	746615c06a42b7625fe7e72527ced74ce7a54630	a0ab4b64a9b6967356fc1359e93a290c8c725849	test(camera): support strict Clang shared fixtures
+tuna/lineage-19.1	frameworks/av	4a288c9f0906ad4fc6b9682b0b73c3403581fb5f	fde74b81efe0574c48a70ea5143ca76b9b5455ed	fix(camera): preserve recording handle return order
+tuna/lineage-19.1	frameworks/av	8175a9538123fb19fda7397f1663c60a3d848960	a54614889adf0939c4ed2209e8cf88456440321a	fix(camera): retain listener capability through device removal
+tuna/lineage-19.1	frameworks/av	e10da7d212f1af1a22f5cd6a2eb71f650036fae4	3272c7e14976cdd3ed35c4c28b8f1eb47366f9cf	fix(camera): preserve client lifecycle error boundaries
+tuna/lineage-19.1	frameworks/av	3c24bb288ab6af5b56f756cedd7fae173b258829	12048e61aab0a9508d51aea640a6fd9e151ebf51	fix(camera): bound HAL1 memory ownership through teardown
+tuna/lineage-19.1	frameworks/av	71da4218f7f46d99c1050624bfe859cb68d68b04	1436e242d460f4b7ce34c95e94eed0c124e6e1c3	fix(camera): negotiate recording mode in the default source
+tuna/lineage-19.1	frameworks/av	8489e512f9375c1c05095cd76d6eac65fd0d5b18	67cf9e0751245d9d7eef3f2392cef5bfdc139a58	fix(camera): restore preview state after rejected target changes
+tuna/lineage-19.1	frameworks/av	3fd71fb59e49da37b5fb09c1b21f0e364217a64c	5ebf906d0e682c1bc5e99aa253363a569c827d45	fix(camera): type native metadata and retain batch handle ownership
+tuna/lineage-19.1	frameworks/av	2bfefcf1b105a0ebf8f5eada50257c8a39e4e4c3	4520b849bf1040324417b03debe5918ee24bda1c	fix(camera): consume recording handles returned after disconnect
+tuna/lineage-19.1	frameworks/av	1d79e684f62cc6e8f887aba823da3214b144b99f	74f4c2830155b8d6b656b5537ccfcc3fb9db76ce	fix(camera): enforce legacy priority offsets without overflow
+tuna/lineage-19.1	frameworks/av	bd2122d100a3e37a06aae58b802efc8e1fa0cb32	baeb9b8995b21a9a513408591816b6248d1e310e	fix(camera): retain preview buffer through dequeue reply
+tuna/lineage-19.1	frameworks/av	a9af6e9c062fe2ad10662da1fff396eb2165a854	e25854f1243beafe7665ed60a13e387235a13f9a	fix(camera): preserve recording and preview teardown ownership
 tuna/lineage-19.1	frameworks/av	a51591db7f0215c019c40d82e9e42510e8f0c355	2e36ea960bcc182e7a89420986da8a8e03de7453	fix(camera): retain callback memory and synchronize preview buffers
 tuna/lineage-19.1	frameworks/av	3ffb267bbf324f058345a2ce570ab1aa963d1b1a	4d18c64f7851dd2a482cbfece9bcff9174d1e653	fix(camera): validate HAL1 callback and lifecycle boundaries
 tuna/lineage-19.1	frameworks/av	8388b5b95eb1b353a6a1e84bf99306fa9b6ae631	6fa81ed0dd3a2e0aa379675cddfed51392663cba	fix(camera): restore HAL1 provider and recording support

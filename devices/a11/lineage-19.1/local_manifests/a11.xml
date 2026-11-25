@@ -29,7 +29,7 @@
   <remove-project name="LineageOS/android_bionic" />
   <project path="bionic" name="android_bionic" remote="oich" revision="017d994214a45a5c71e670797e5a8fcd6e186850" upstream="lineage-19.1" groups="pdk" />
   <remove-project name="LineageOS/android_frameworks_av" />
-  <project path="frameworks/av" name="android_frameworks_av" remote="oich" revision="c1c7034e960f5ae8637364a42fdebd640e03d4c4" upstream="lineage-19.1" groups="pdk" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="oich" revision="0feff46b0dceeeb785e1f3127e23e6bc8f260f59" upstream="lineage-19.1" groups="pdk" />
   <remove-project name="LineageOS/android_frameworks_base" />
   <project path="frameworks/base" name="android_frameworks_base" remote="oich" revision="687ef4d0c67f87bfad35686ee24dcf177c228759" upstream="lineage-19.1" groups="pdk-cw-fs,pdk-fs" />
   <remove-project name="platform/system/bpf" />
@@ -43,7 +43,7 @@
            revision="5ae85863f46618658cfb14d812623f3949788c2c" upstream="lineage-18.1-kernel" clone-depth="1" />
 
   <project path="device/htc/a11" name="android_device_htc_a11" remote="oich" revision="f734050671fb88ed068145828e2c9cea88f4d7dc" upstream="lineage-19.1" />
-  <project path="device/htc/msm8226-common" name="android_device_htc_msm8226-common" remote="oich" revision="6a916c8b6027d2e3ee4b05dc9a6328227e89aef2" upstream="lineage-19.1" />
+  <project path="device/htc/msm8226-common" name="android_device_htc_msm8226-common" remote="oich" revision="a45257a4f7bba4e5cf6e810c82636e0e43da7511" upstream="lineage-19.1" />
 
   <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" remote="github"
            revision="3f56559a5436fd7be36fc6b7010ed3506ebe6e08" upstream="lineage-19.1" />

@@ -1,15 +1,15 @@
 source_tree	path	source_ref	owner_repository	pushed_ref	sha	verified
-m8/lineage-22.2	device/htc/msm8226-common	HEAD	Oichkatzelesfrettschen/android_device_htc_msm8226-common	dev/m8/lineage-22.2	2cf267830f09d13895eecbf530010b42e8f5bdd0	ls-remote tip
-m8/lineage-22.2	device/htc/msm8226-common	config/a11-adreno305-duplicate-damage-region	Oichkatzelesfrettschen/android_device_htc_msm8226-common	topic/m8/lineage-22.2/config/a11-adreno305-duplicate-damage-region	789194c009c25d404883810242b77022ac564245	ls-remote tip
-m8/lineage-22.2	device/htc/msm8226-common	fix/a11-accelerated-media-integration	Oichkatzelesfrettschen/android_device_htc_msm8226-common	topic/m8/lineage-22.2/fix/a11-accelerated-media-integration	63918a84e3f08b6dc7e3ee43aa7a26c5de280ea1	ls-remote tip
-m8/lineage-22.2	device/htc/msm8226-common	fix/a11-venus-hevc-capability	Oichkatzelesfrettschen/android_device_htc_msm8226-common	topic/m8/lineage-22.2/fix/a11-venus-hevc-capability	415228a3fb2a484bfda13319958d37fbc13ba464	ls-remote tip
-m8/lineage-22.2	device/htc/msm8226-common	fix/container-sample-memory-bounds	Oichkatzelesfrettschen/android_device_htc_msm8226-common	topic/m8/lineage-22.2/fix/container-sample-memory-bounds	a5dd52d66ff5e789d11de4df3ca947433b2426d6	ls-remote tip
+m8/lineage-22.2	device/htc/msm8226-common	HEAD	Oichkatzelesfrettschen/android_device_htc_msm8226-common	dev/m8/lineage-22.2	523108df0205fa3403e3c45c8683b5bf7345c744	ls-remote tip
+m8/lineage-22.2	device/htc/msm8226-common	config/a11-adreno305-duplicate-damage-region	Oichkatzelesfrettschen/android_device_htc_msm8226-common	topic/m8/lineage-22.2/config/a11-adreno305-duplicate-damage-region	5e6baee773887bc5c35c2bad499aa5785c6db82a	ls-remote tip
+m8/lineage-22.2	device/htc/msm8226-common	fix/a11-accelerated-media-integration	Oichkatzelesfrettschen/android_device_htc_msm8226-common	topic/m8/lineage-22.2/fix/a11-accelerated-media-integration	9603a9fc78c71ea9bbed7c1d88d417ba4662a4ed	ls-remote tip
+m8/lineage-22.2	device/htc/msm8226-common	fix/a11-venus-hevc-capability	Oichkatzelesfrettschen/android_device_htc_msm8226-common	topic/m8/lineage-22.2/fix/a11-venus-hevc-capability	937f4fecbc7f4e9f0eda76028db00436727cdb63	ls-remote tip
+m8/lineage-22.2	device/htc/msm8226-common	fix/container-sample-memory-bounds	Oichkatzelesfrettschen/android_device_htc_msm8226-common	topic/m8/lineage-22.2/fix/container-sample-memory-bounds	7cf8085c804e7a53a3a7f5e16809b1143058d757	ls-remote tip
 m8/lineage-22.2	external/strace	HEAD	Oichkatzelesfrettschen/platform_external_strace	dev/m8/lineage-22.2	cf84ac9a129d8ea9952db616b4e9b904c4bdde56	ls-remote tip
 m8/lineage-22.2	external/strace	codex/msm-audio-descriptor-trace	Oichkatzelesfrettschen/platform_external_strace	topic/m8/lineage-22.2/codex/msm-audio-descriptor-trace	7baa6d1426b9dc83bea78dd3e63ac5dbd87c4c84	ls-remote tip
-m8/lineage-22.2	frameworks/av	HEAD	Oichkatzelesfrettschen/android_frameworks_av	dev/m8/lineage-22.2	c6a45c043b113da59a56f58dc97b86bc6f5a2422	ls-remote tip
-m8/lineage-22.2	frameworks/av	camera-hal1-recording-restore	Oichkatzelesfrettschen/android_frameworks_av	topic/m8/lineage-22.2/camera-hal1-recording-restore	1f61b5f94d7c4fbccb118457511cbdfc4b5963e5	ls-remote tip
-m8/lineage-22.2	frameworks/av	evrc-qcelp-role-map	Oichkatzelesfrettschen/android_frameworks_av	topic/m8/lineage-22.2/evrc-qcelp-role-map	56c60e881bbc0ced5346d9b3a8e69d4e36c66b1a	ls-remote tip
-m8/lineage-22.2	frameworks/av	feature/omx-legacy-qcom-codec-roles	Oichkatzelesfrettschen/android_frameworks_av	topic/m8/lineage-22.2/feature/omx-legacy-qcom-codec-roles	80ff8a5abb47ff6edfb78a9a1d06f17d26bf7a37	ls-remote tip
+m8/lineage-22.2	frameworks/av	HEAD	Oichkatzelesfrettschen/android_frameworks_av	dev/m8/lineage-22.2	d8d0dd1220817d1318876707527f747c1c07aef9	ls-remote tip
+m8/lineage-22.2	frameworks/av	camera-hal1-recording-restore	Oichkatzelesfrettschen/android_frameworks_av	topic/m8/lineage-22.2/camera-hal1-recording-restore	930a8a11bdaf9699d0c5c6f7cbcc5bf46fdc3d03	ls-remote tip
+m8/lineage-22.2	frameworks/av	evrc-qcelp-role-map	Oichkatzelesfrettschen/android_frameworks_av	topic/m8/lineage-22.2/evrc-qcelp-role-map	23662c2fa7f5a039911665eb3885f3d44b18e94a	ls-remote tip
+m8/lineage-22.2	frameworks/av	feature/omx-legacy-qcom-codec-roles	Oichkatzelesfrettschen/android_frameworks_av	topic/m8/lineage-22.2/feature/omx-legacy-qcom-codec-roles	ca8019a999bc3c41ae83dd6bdeb4e53778ca263b	ls-remote tip
 m8/lineage-22.2	frameworks/base	HEAD	Oichkatzelesfrettschen/android_frameworks_base	dev/m8/lineage-22.2	09fab5c2f4a7e450a142c149140ce2a7ab4f015a	ls-remote tip
 m8/lineage-22.2	frameworks/base	camera-ion-egl-recording-rebase	Oichkatzelesfrettschen/android_frameworks_base	topic/m8/lineage-22.2/camera-ion-egl-recording-rebase	f6c61f178b942fafe097c1300afed24b6ebe6850	ls-remote tip
 m8/lineage-22.2	frameworks/native	HEAD	Oichkatzelesfrettschen/android_frameworks_native	dev/m8/lineage-22.2	71f3f76d187e94e96fae15013ae70069c7cfb513	ls-remote tip

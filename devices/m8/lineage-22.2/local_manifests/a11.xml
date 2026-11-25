@@ -15,7 +15,7 @@
   <project path="device/htc/a11" name="android_device_htc_a11" remote="oich"
            revision="649492f06b6a978e487f633c5f5098b2b753318f" upstream="integration/a11-successor-5" />
   <project path="device/htc/msm8226-common" name="android_device_htc_msm8226-common" remote="oich"
-           revision="2cf267830f09d13895eecbf530010b42e8f5bdd0" upstream="integration/a11-successor-5" />
+           revision="523108df0205fa3403e3c45c8683b5bf7345c744" upstream="integration/a11-successor-5" />
   <project path="kernel/htc/a11" name="android_kernel_htc_a11" remote="oich"
            revision="c1ae63a806ea138dac12d7a76698cee3833d11e2" upstream="integration/a11-successor-5" clone-depth="1" />
 

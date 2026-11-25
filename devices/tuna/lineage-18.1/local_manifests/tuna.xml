@@ -28,7 +28,7 @@
        for any commit reachable from a branch. -->
   <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="oich" revision="ac5242b3c58b904f9b1aac8b8e0fe853effb7aa5" upstream="feature/tuna-clang-thinlto-kbuild" clone-depth="1" />
   <remove-project name="LineageOS/android_hardware_interfaces" />
-  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="oich" revision="bac8a8d7a5be2d0d7e39036224c1f7ce8dc333bd" upstream="lineage-18.1" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="oich" revision="4eae596cf635b5d016b2069525c3fb31ee044063" upstream="lineage-18.1" />
   <project path="hardware/ti/omap4" name="android_hardware_ti_omap4" remote="oich" revision="c0dd1280da6cb4db9e7a64cb8f4a88d1b52bf2bc" upstream="lineage-18.1" />
   <!-- EXIF writer for the OMAP4 camera HAL; AOSP dropped jhead in Android 10.
        Base platform/external/jhead 9c6e507bb38e1cede54c392058fd6ba42f0ef0a7

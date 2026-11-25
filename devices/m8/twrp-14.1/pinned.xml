@@ -7,7 +7,7 @@
   <remote name="gh" fetch="https://github.com/" />
   <remote name="github" fetch="https://github.com" />
   <default remote="aosp" revision="refs/tags/android-14.0.0_r67" sync-j="4" />
-  <project name="android_bootable_recovery-m8-twrp" path="bootable/recovery" remote="oich-ledger" revision="caeb2b74f74f651d095033cff54f7b4803a637e1" upstream="refs/heads/dev/m8/twrp-14.1" groups="local::htc_m8" />
+  <project name="android_bootable_recovery-m8-twrp" path="bootable/recovery" remote="oich-ledger" revision="596f3de221d39579cea81567b71b6edb14d3c1d5" upstream="refs/heads/dev/m8/twrp-14.1" groups="local::htc_m8" />
   <project name="Oichkatzelesfrettschen/android_device_htc_m8-twrp" path="device/htc/m8" remote="gh" revision="902424abf8910fca85daa8c40412ecad40d37d8d" upstream="refs/heads/main" dest-branch="2806c7425e4183b22ac292481fa17cb265560098" groups="local::htc_m8" />
   <project name="Oichkatzelesfrettschen/android_system_core-m8-twrp" path="system/core" remote="gh" revision="f28530e38bbcd51578870639935e0b6eb041bdf6" groups="local::htc_m8" />
   <project name="android_build" path="build/make" remote="TeamWin" revision="506df226dd003a364916b6b3ee1eb3bf9064f97f" upstream="android-14.1" dest-branch="android-14.1" groups="pdk">

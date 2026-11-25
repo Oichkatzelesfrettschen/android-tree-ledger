@@ -316,8 +316,8 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project name="android_device_htc_a11" path="device/htc/a11" remote="oich" revision="f734050671fb88ed068145828e2c9cea88f4d7dc" upstream="lineage-19.1" groups="local::a11" />
-  <project name="android_device_htc_msm8226-common" path="device/htc/msm8226-common" remote="oich" revision="6a916c8b6027d2e3ee4b05dc9a6328227e89aef2" upstream="lineage-19.1" groups="local::a11" />
-  <project name="android_frameworks_av" path="frameworks/av" remote="oich-ledger" revision="c1c7034e960f5ae8637364a42fdebd640e03d4c4" upstream="refs/heads/dev/a11/lineage-19.1" groups="local::a11,pdk" />
+  <project name="android_device_htc_msm8226-common" path="device/htc/msm8226-common" remote="oich" revision="a45257a4f7bba4e5cf6e810c82636e0e43da7511" upstream="lineage-19.1" groups="local::a11" />
+  <project name="android_frameworks_av" path="frameworks/av" remote="oich-ledger" revision="0feff46b0dceeeb785e1f3127e23e6bc8f260f59" upstream="refs/heads/dev/a11/lineage-19.1" groups="local::a11,pdk" />
   <project name="android_frameworks_base" path="frameworks/base" remote="oich-ledger" revision="687ef4d0c67f87bfad35686ee24dcf177c228759" upstream="refs/heads/dev/a11/lineage-19.1" groups="local::a11,pdk-cw-fs,pdk-fs" />
   <project name="android_hardware_qcom_audio" path="hardware/qcom-caf/msm8974/audio" remote="oich-ledger" revision="c95116ff339c8a6d492de2bcd0fafff607ae76ba" upstream="refs/heads/dev/a11/lineage-19.1" groups="local::a11" />
   <project name="android_hardware_qcom_display" path="hardware/qcom-caf/msm8974/display" remote="oich" revision="ae3213871c562e096fdc71a2c3cc0447312beff6" upstream="lineage-19.1-caf-msm8974" groups="local::a11" />

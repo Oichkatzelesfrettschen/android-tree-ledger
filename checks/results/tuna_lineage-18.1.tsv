@@ -297,7 +297,7 @@ PASS-tip	external/jhead	https://github.com/Oichkatzelesfrettschen/android_extern
 PASS-tip	frameworks/base	https://github.com/Oichkatzelesfrettschen/android_frameworks_base	refs/heads/dev/tuna/lineage-18.1	082f204127ac8723bcd7583c7dd7848467d31cfc
 PASS-tip	frameworks/native	https://github.com/Oichkatzelesfrettschen/android_frameworks_native	refs/heads/lineage-18.1	8a0c9d26ab15d7ba9a2e2c9829e0b3cfd1c46190
 PASS-compare	device/samsung/maguro	https://github.com/Oichkatzelesfrettschen/android_device_samsung_maguro	refs/heads/lineage-18.1	611c7b1e1c2c5848d034d15fe2cf854d70692e60
-PASS-tip	hardware/interfaces	https://github.com/Oichkatzelesfrettschen/android_hardware_interfaces	refs/heads/lineage-18.1	bac8a8d7a5be2d0d7e39036224c1f7ce8dc333bd
+PASS-tip	hardware/interfaces	https://github.com/Oichkatzelesfrettschen/android_hardware_interfaces	refs/heads/lineage-18.1	4eae596cf635b5d016b2069525c3fb31ee044063
 PASS-compare	build/soong	https://github.com/Oichkatzelesfrettschen/android_build_soong	refs/heads/lineage-18.1	acaa4db66a81e0649979d9446199c64bac65798c
 PASS-compare	device/samsung/tuna	https://github.com/Oichkatzelesfrettschen/android_device_samsung_tuna	refs/heads/lineage-18.1	7a7f0cefe863e757a401dc5aac6cf4f97c37df38
 PASS-tip	packages/apps/PermissionController	https://github.com/Oichkatzelesfrettschen/android_packages_apps_PackageInstaller	refs/heads/dev/tuna/lineage-18.1	1b44d574227dc797bfa1011986f375992b75c92d

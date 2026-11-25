@@ -327,7 +327,7 @@
     <linkfile src="root.bp" dest="Android.bp" />
   </project>
   <project name="android_device_htc_a11" path="device/htc/a11" remote="oich" revision="59bc2cc343ca26eea498a43b0ac08573f4fe4a0f" upstream="lineage-18.1" groups="local::a11" />
-  <project name="android_device_htc_msm8226-common" path="device/htc/msm8226-common" remote="oich" revision="c3d68e97479add42989dfc9afc98a5f1adbe1090" upstream="lineage-18.1" groups="local::a11" />
+  <project name="android_device_htc_msm8226-common" path="device/htc/msm8226-common" remote="oich" revision="bf4dd43c78a4c3d5de5c005e21425632651455b5" upstream="lineage-18.1" groups="local::a11" />
   <project name="android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="lineage" revision="3f56559a5436fd7be36fc6b7010ed3506ebe6e08" upstream="lineage-18.1" groups="local::a11" />
   <project name="android_frameworks_base" path="frameworks/base" remote="oich-ledger" revision="12d5f25a9bd019cff0a1857cbae3b211912b1514" upstream="refs/heads/dev/a11/lineage-18.1" groups="local::a11,pdk-cw-fs,pdk-fs" />
   <project name="android_hardware_qcom_audio" path="hardware/qcom-caf/msm8974/audio" remote="oich" revision="06ba6348dc9987ee096b4628eb8ca4945a91e2d5" upstream="lineage-18.1-caf-msm8974" groups="local::a11" />
