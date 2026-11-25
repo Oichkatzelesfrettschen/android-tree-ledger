@@ -1199,6 +1199,6 @@
   <project name="android_device_samsung_maguro" path="device/samsung/maguro" remote="oich-ledger" revision="fa9ff4b31bdc1e8ef7d5c758d0daf6382870c2c4" upstream="refs/heads/dev/tuna/lineage-22.2" groups="local::tuna" />
   <project name="android_hardware_ti_omap4" path="hardware/ti/omap4" remote="oich-ledger" revision="090f7e62f0c7cb216d9ad082aa439bfe51113d25" upstream="refs/heads/dev/tuna/lineage-22.2" groups="local::tuna" />
   <project name="android_external_jhead" path="external/jhead" remote="oich" revision="27ecb75f03f8a6c1b1a2f2ff240e918d2cb78754" upstream="lineage-18.1" groups="local::tuna" />
-  <project name="android_kernel_samsung_tuna" path="kernel/samsung/tuna" remote="oich" revision="3450fee356ba09de391104416a546e10b26cd4a0" upstream="feature/tuna-clang-thinlto-kbuild" groups="local::tuna" clone-depth="1" />
+  <project name="kernel_omap" path="kernel/samsung/tuna" remote="oich" revision="2297e985744f9a05107f3608f6193c5c4f7d8554" upstream="topic/tuna/lineage-22.2/ebpf" groups="local::tuna" clone-depth="1" />
   <contactinfo bugurl="go/repo-bug" />
 </manifest>

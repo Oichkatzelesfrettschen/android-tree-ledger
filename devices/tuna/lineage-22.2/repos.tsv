@@ -5,3 +5,4 @@ tuna/lineage-22.2	hardware/ti/omap4	HEAD	Oichkatzelesfrettschen/android_hardware
 tuna/lineage-22.2	frameworks/native	topic/shared/lineage-22.2/gles-renderengine-select	Oichkatzelesfrettschen/android_frameworks_native	topic/shared/lineage-22.2/gles-renderengine-select	e82f244ef175dc34345f40d05f878a9192d54290	ls-remote tip
 tuna/lineage-22.2	hardware/interfaces	topic/tuna/lineage-22.2/hwc2on1-client-target	Oichkatzelesfrettschen/android_hardware_interfaces	topic/tuna/lineage-22.2/hwc2on1-client-target	7bf40a2c2d8a98a92aea5cdb84205cdb7b4cf6a1	ls-remote tip
 tuna/lineage-22.2	system/sepolicy	topic/tuna/lineage-22.2/textrel-vendor-execmod	Oichkatzelesfrettschen/android_system_sepolicy	topic/tuna/lineage-22.2/textrel-vendor-execmod	10f5d6223fa9285ddc8959e72ef3ea806fe9c5ca	ls-remote tip
+tuna/lineage-22.2	kernel/samsung/tuna	topic/tuna/lineage-22.2/ebpf	Oichkatzelesfrettschen/kernel_omap	topic/tuna/lineage-22.2/ebpf	2297e985744f9a05107f3608f6193c5c4f7d8554	ls-remote tip
