@@ -321,7 +321,6 @@
   <project name="android_system_netd" path="system/netd" remote="oich" revision="ba413acbd62015f58ad77926c05bcbabb8884f4d" upstream="lineage-19.1-tuna" groups="local::tuna,pdk" />
   <project name="android_system_sepolicy" path="system/sepolicy" remote="oich" revision="25e9f16e7d36fe4babd1d5a346d59d72837b1d8a" upstream="lineage-19.1-tuna" groups="local::tuna,pdk" />
   <project name="android_vendor_lineage" path="vendor/lineage" remote="oich" revision="ac88ea4ac7803e0695727312708b5bc7fda4e916" upstream="lineage-19.1-tuna" groups="local::tuna" />
-  <project name="android_vendor_microg" path="vendor/microg" remote="oich" revision="896d316340800b50d4b9816d677cf311115481dd" upstream="lineage-19.1" groups="local::tuna" />
   <project name="device/common" remote="aosp" revision="863f4b33ac0a905e4e25e53c8a279cad78357f58" upstream="refs/tags/android-12.1.0_r22" dest-branch="refs/tags/android-12.1.0_r22" groups="pdk,pdk-cw-fs" />
   <project name="device/generic/arm64" remote="aosp" revision="c3df6ff97a7cc229da9e4e67840660a76bbcfcc1" upstream="refs/tags/android-12.1.0_r22" dest-branch="refs/tags/android-12.1.0_r22" groups="pdk" />
   <project name="device/generic/armv7-a-neon" remote="aosp" revision="dd835701bc94e29c67fbf272880063058a800bf0" upstream="refs/tags/android-12.1.0_r22" dest-branch="refs/tags/android-12.1.0_r22" groups="pdk" />
@@ -1143,7 +1142,6 @@
   <project name="platform/system/libvintf" path="system/libvintf" remote="aosp" revision="4d36379cf332a903925d17ea718fa2f1289ab54f" upstream="refs/tags/android-12.1.0_r22" dest-branch="refs/tags/android-12.1.0_r22" groups="pdk" />
   <project name="platform/system/linkerconfig" path="system/linkerconfig" remote="aosp" revision="c2872fa4275e06224164986525c0157c117773dc" upstream="refs/tags/android-12.1.0_r22" dest-branch="refs/tags/android-12.1.0_r22" groups="pdk" />
   <project name="platform/system/memory/libdmabufheap" path="system/memory/libdmabufheap" remote="aosp" revision="3c8def05890626ef2c3d3e390ece81b7f9140b3c" upstream="refs/tags/android-12.1.0_r22" dest-branch="refs/tags/android-12.1.0_r22" groups="pdk" />
-  <project name="android_system_memory_libion" path="system/memory/libion" remote="oich-ledger" revision="2375b45565a9d26e8a035e8e852cc5796fbb78c3" upstream="refs/heads/dev/tuna/lineage-19.1" groups="pdk" />
   <project name="platform/system/memory/libmeminfo" path="system/memory/libmeminfo" remote="aosp" revision="8279a58a2e1d6a6492f3bfc52a7b542a0f52783b" upstream="refs/tags/android-12.1.0_r22" dest-branch="refs/tags/android-12.1.0_r22" groups="pdk" />
   <project name="platform/system/memory/libmemtrack" path="system/memory/libmemtrack" remote="aosp" revision="d6368c670ea3c7bec3d94d12c47f07a376bf6e76" upstream="refs/tags/android-12.1.0_r22" dest-branch="refs/tags/android-12.1.0_r22" groups="pdk" />
   <project name="platform/system/memory/libmemunreachable" path="system/memory/libmemunreachable" remote="aosp" revision="53c0cb0f22e0149090e719f6a5db7793d7f04346" upstream="refs/tags/android-12.1.0_r22" dest-branch="refs/tags/android-12.1.0_r22" groups="pdk" />
@@ -1197,8 +1195,6 @@
   <project name="platform/tools/tradefederation/prebuilts" path="tools/tradefederation/prebuilts" remote="aosp" revision="477f1e58308678cfca2559bf9af19be1c1e6da24" upstream="refs/tags/android-12.1.0_r22" dest-branch="refs/tags/android-12.1.0_r22" groups="pdk,tradefed" clone-depth="1" />
   <project name="platform/tools/treble" path="tools/treble" remote="aosp" revision="1b18efe53304a3c3d7112e91250b885ed5437a9e" upstream="refs/tags/android-12.1.0_r22" dest-branch="refs/tags/android-12.1.0_r22" groups="pdk,tools" />
   <project name="platform/tools/trebuchet" path="tools/trebuchet" remote="aosp" revision="6d2c711220d72620090941cf14ac33037d402523" upstream="refs/tags/android-12.1.0_r22" dest-branch="refs/tags/android-12.1.0_r22" groups="cts,pdk,pdk-cw-fs,pdk-fs,tools" />
-  <project name="proprietary_vendor_samsung" path="vendor/samsung" remote="oich" revision="0d5f69f430a292ff710b25eeec33ec1ea5a98dd1" upstream="lineage-18.1" groups="local::tuna" />
-  <project name="proprietary_vendor_ti" path="vendor/ti" remote="oich" revision="ca92041c1501bee1c34e76726960979645f7772c" upstream="stable" groups="local::tuna" />
   <project name="toolchain/benchmark" remote="aosp" revision="8865b07dcd100bf8e90d4f24b9b44a93270ed047" upstream="refs/tags/android-12.1.0_r22" dest-branch="refs/tags/android-12.1.0_r22" />
   <project name="toolchain/llvm-project" path="external/llvm-project" remote="aosp" revision="664b187160dc951c2cea3b69f92decf358d8e75a" upstream="refs/tags/android-12.1.0_r22" dest-branch="refs/tags/android-12.1.0_r22" groups="pdk" />
   <project name="toolchain/pgo-profiles" remote="aosp" revision="739026928bc7d99f4cccd96e0a7a42bec79de254" upstream="refs/tags/android-12.1.0_r22" dest-branch="refs/tags/android-12.1.0_r22" groups="pdk" />

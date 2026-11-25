@@ -6,7 +6,6 @@ tuna/lineage-18.1	system/apex	HEAD	Oichkatzelesfrettschen/android_system_apex	de
 tuna/lineage-18.1	system/libhidl	HEAD	Oichkatzelesfrettschen/android_system_libhidl	dev/tuna/lineage-18.1	988e15d4eb118d4d75ebfc5d4467488d3493adc3	ls-remote tip
 tuna/lineage-18.1	vendor/lineage	HEAD	Oichkatzelesfrettschen/android_vendor_lineage	dev/tuna/lineage-18.1	231bec0552babac7cb870ec2aa0bd56ebf8011c6	ls-remote tip
 tuna/lineage-18.1	vendor/samsung	HEAD	Oichkatzelesfrettschen/proprietary_vendor_samsung-themuppets	dev/tuna/lineage-18.1	5ebbff5488599f16eea204d2d11b7bb23e144f13	ls-remote tip
-tuna/lineage-18.1	vendor/ti	HEAD	Oichkatzelesfrettschen/proprietary_vendor_ti	dev/tuna/lineage-18.1	fd79492f508b981e818029ca57a4c2daac2ef078	ls-remote tip
 standalone	tuna/android_kernel_samsung_tuna	HEAD	Oichkatzelesfrettschen/android_kernel_samsung_tuna	dev/tuna/lineage-18.1	f87a5d76e80525ae898231b81e33394dbf44b94f	ls-remote tip
 standalone	tuna/android_kernel_samsung_tuna	feature/tuna-clang-thinlto-kbuild	Oichkatzelesfrettschen/android_kernel_samsung_tuna	topic/tuna/lineage-18.1/feature/tuna-clang-thinlto-kbuild	87ac2e6e52bedafa101718df586592e327c7677c	ls-remote tip
 standalone	tuna/android_kernel_samsung_tuna	random/omap4-boot-entropy	Oichkatzelesfrettschen/android_kernel_samsung_tuna	topic/tuna/lineage-18.1/random/omap4-boot-entropy	50073a7f685ae015946c36026ded5a40e6b51e85	ls-remote tip

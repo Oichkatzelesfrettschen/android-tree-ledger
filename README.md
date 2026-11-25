@@ -32,9 +32,17 @@ repo init -u https://github.com/Oichkatzelesfrettschen/android-tree-ledger -m de
 repo sync -c -j8
 ```
 
+The private overlay step (owner credentials) runs before `repo sync`:
+
+```sh
+git clone --depth=1 https://github.com/Oichkatzelesfrettschen/android-tree-ledger-private .repo/ledger-private
+mkdir -p .repo/local_manifests
+cp .repo/ledger-private/devices/m8/lineage-22.2/private.xml .repo/local_manifests/private.xml
+```
+
 Then apply each `patches/<path>.patch` with `git -C <path> apply` and recreate the links in `overlay/symlinks.txt`.
 
-Eleven pins name owner repositories that are still private, so an anonymous sync of those trees needs credentials until their publication scans finish: android_device_htc_a11chl (a11chl/twrp-11), proprietary_vendor_htc_a11chl (a11/lineage-18.1, a11/lineage-19.1, m8/lineage-22.2), proprietary_vendor_htc_m8 (m8/lineage-22.2), android_vendor_microg (tuna/lineage-18.1, tuna/lineage-19.1), proprietary_vendor_ti (tuna/lineage-18.1, tuna/lineage-19.1), android_system_memory_libion and proprietary_vendor_samsung (tuna/lineage-19.1). The tuna/lineage-18.1 Samsung blobs come from the public fork proprietary_vendor_samsung-themuppets.
+Pins of repositories that are not public live in the private repository `android-tree-ledger-private`, in one `devices/<device>/<track>/private.xml` per affected track. The public manifests resolve anonymously; a tree synced from a public manifest alone lacks the projects of its overlay (vendor blob and device projects). The overlay is a repo local manifest: clone the private repository, copy the track's `private.xml` to `.repo/local_manifests/`, and run `repo sync`. `sh restore.sh DEVICE/TRACK WORKDIR` in that repository performs the whole sequence and compares every project HEAD with its pin. Access needs the owner account: `gh auth login` followed by `gh auth setup-git`, or an ssh key registered with the account plus a global `url.<ssh base>.insteadOf` rule that rewrites the https GitHub prefix to its ssh form (the private repository's README gives the exact setting). Scripted runs set `GIT_TERMINAL_PROMPT=0 GIT_ASKPASS=/bin/false SSH_ASKPASS=/bin/false` so a missing credential fails at once. The tuna/lineage-18.1 Samsung blobs come from the public fork proprietary_vendor_samsung-themuppets.
 
 ## Verifying the pins
 
