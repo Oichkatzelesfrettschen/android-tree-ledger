@@ -8,6 +8,7 @@ Outcome of the red-team round (reports/, reconciliation.md) as integrated by the
 
 - A manifest id names one pinned manifest and its ledger directory: m8-lineage-22.2, tuna-lineage-18.1, tuna-lineage-19.1, a11-lineage-18.1, a11-lineage-19.1, bullhead-lineage-22.2, m8-twrp-14.1, a11chl-twrp-11, twrp-12.1, plus the standalone kernels. matrix.tsv carries the products each manifest builds (m8-lineage-22.2 builds m8 and a11).
 - dev/<manifest-id>/<track> in each owner repository points at the built HEAD of that project. The track is the upstream branch the tree follows (lineage-18.1, twrp-14.1).
+- A dev/<device>/<track> ref exists only in a repository where local work was pushed; other projects pin an upstream or owner branch tip. Ledger dev refs move only by fast-forward, never by force.
 - topic/<manifest-id>/<track>/<slug> holds every other local branch, under its own slug, so no work is squashed or dropped.
 - No existing fork branch moves; nothing merges into a fork default branch in this round. A synth/<track> branch, where two devices share a fork and a release, is an open item with the reviewer's `git merge-tree --write-tree` command; its conflicts are unreproduced and a camera merge cannot be built on this host.
 - Uncommitted and untracked files go into the ledger as devices/<manifest-id>/patches/<project>.patch or an overlay directory, after each file is read; they create no wip branch and no new fork.
