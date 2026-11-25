@@ -1,0 +1,7 @@
+source_tree	path	source_ref	owner_repository	pushed_ref	sha	verified
+standalone	desire510-kernel	HEAD	Oichkatzelesfrettschen/android_kernel_htc_a11	dev/a11/lineage-22.2	8d6f27ecec2e9d66c2ef5ad18f577f4dc289da9a	ls-remote tip
+standalone	desire510-kernel	codex/perf-software-event-preemption-balance	Oichkatzelesfrettschen/android_kernel_htc_a11	topic/a11/lineage-22.2/codex/perf-software-event-preemption-balance	63c68a6d6fa76dd3410d57abb3a263aaf4f7f184	ls-remote tip
+standalone	desire510-kernel	codex/proc-fdinfo-inode-type	Oichkatzelesfrettschen/android_kernel_htc_a11	topic/a11/lineage-22.2/codex/proc-fdinfo-inode-type	30671f1424fe4cf111f029e2a0684dc631c30cf6	ls-remote tip
+standalone	desire510-kernel	fix/aac-dsp-format-status	Oichkatzelesfrettschen/android_kernel_htc_a11	topic/a11/lineage-22.2/fix/aac-dsp-format-status	480ca388a37ed696679513a621a8b5809e1c5337	ls-remote tip
+standalone	desire510-kernel	integration/a11-vidc-hier-p-static-alloc	Oichkatzelesfrettschen/android_kernel_htc_a11	topic/a11/lineage-22.2/integration/a11-vidc-hier-p-static-alloc	c7a32d5f2660d995f53d230cdc5657d296b72320	ls-remote tip
+standalone	desire510-kernel	kernel/a11-hz300-drawer-latency	Oichkatzelesfrettschen/android_kernel_htc_a11	topic/a11/lineage-22.2/kernel/a11-hz300-drawer-latency	ab3a3f6ee7070387723674c42e291e08f0c8190d	ls-remote tip

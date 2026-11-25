@@ -1,0 +1,11 @@
+source_tree	path	source_ref	owner_repository	pushed_ref	sha	verified
+desire510-19.1	art	HEAD	Oichkatzelesfrettschen/android_art	dev/a11/lineage-19.1	72e0b9c32e2348fd89f45e4555c4dad2001a20d4	ls-remote tip
+desire510-19.1	bionic	HEAD	Oichkatzelesfrettschen/android_bionic	dev/a11/lineage-19.1	017d994214a45a5c71e670797e5a8fcd6e186850	ls-remote tip
+desire510-19.1	build/soong	HEAD	Oichkatzelesfrettschen/android_build_soong	dev/a11/lineage-19.1	8310059358814b6a70f1c41b201497c5335792ed	ls-remote tip
+desire510-19.1	frameworks/av	HEAD	Oichkatzelesfrettschen/android_frameworks_av	dev/a11/lineage-19.1	c1c7034e960f5ae8637364a42fdebd640e03d4c4	ls-remote tip
+desire510-19.1	frameworks/base	HEAD	Oichkatzelesfrettschen/android_frameworks_base	dev/a11/lineage-19.1	687ef4d0c67f87bfad35686ee24dcf177c228759	ls-remote tip
+desire510-19.1	hardware/qcom-caf/msm8974/audio	HEAD	Oichkatzelesfrettschen/android_hardware_qcom_audio	dev/a11/lineage-19.1	c95116ff339c8a6d492de2bcd0fafff607ae76ba	ls-remote tip
+desire510-19.1	hardware/qcom-caf/msm8974/media	HEAD	Oichkatzelesfrettschen/android_hardware_qcom_media	dev/a11/lineage-19.1	fceddfe365e41ba2ef572c295978d59d75be382b	ls-remote tip
+desire510-19.1	hardware/ril	HEAD	Oichkatzelesfrettschen/android_hardware_ril	dev/a11/lineage-19.1	b11643864a3d3368a62eeb21ab92be71649c26f9	ls-remote tip
+desire510-19.1	system/bpf	HEAD	Oichkatzelesfrettschen/android_system_bpf	dev/a11/lineage-19.1	a6cee90339d714ec89a4e7529817661dff83629d	ls-remote tip
+desire510-19.1	system/netd	HEAD	Oichkatzelesfrettschen/android_system_netd	dev/a11/lineage-19.1	f1234fb0d139d061be60cef497d22f544fdf48db	ls-remote tip

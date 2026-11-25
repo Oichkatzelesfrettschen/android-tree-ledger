@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- HTC Desire 510 (a11chl) on LineageOS 18.1: applied at a checkout made with
+       repo init's reference option pointing at $HOME/Projects/Android/trees/tuna/lineage-18.1 (a new tree,
+       e.g. $HOME/Projects/Android/trees/desire510-18.1), never layered onto the live tuna
+       tree itself; see HTC-Desire510/notes/LINEAGE_18_1_PORT_PLAN.md
+       section 1 for why (tuna.xml re-points frameworks/native, hardware/
+       interfaces, and build/soong at tuna-only forks; a second local
+       manifest cannot re-point the same paths a second way, and any tuna
+       patch not gated by a BoardConfig flag would silently apply to an
+       a11 lunch target too).
+
+       The "oich" remote is the Oichkatzelesfrettschen fork holding this
+       device's own commits. kernel/htc/a11 follows lineage-18.1-kernel,
+       which carries the mpm-of modpost fix, the Android 11 binder, seccomp
+       filter enforcement, sdcardfs, and the recovery-proven FunctionFS/AIO
+       and mmap_rnd_bits series; that head boots TWRP 3.7 with adb.
+
+       device/htc/msm8226-common's own lineage.dependencies (read via `gh
+       api .../contents/lineage.dependencies?ref=lineage-18.1`) names two
+       projects its BoardConfigCommon.mk/Android.bp include: qcom-common
+       (the tree msm8226-common itself inherits from) and hardware/sony/
+       timekeep. Neither carries an HTC-specific patch, so both are
+       referenced straight from LineageOS at their lineage-18.1 tip, not
+       forked; a fork is warranted only once this device needs to diverge
+       from either.
+
+       frameworks/base follows the fork's lineage-18.1, which adds the
+       XTRA server list to gps_debug.conf: frameworks/base installs that
+       file as a prebuilt_etc module, so a device copy of it collides in
+       Kati.
+
+       Every oich project tracks its merged lineage-18.1 base branch. The
+       pinned heads build the image that runs SELinux enforcing with Wi-Fi,
+       audio, the radio daemons and GNSS, zram, every USB function, the
+       sensors, Bluetooth, the cameras, and the venus video core
+       (notes/HARDWARE_REFERENCE_MATRIX.md, LineageOS 18.1 current state). -->
+  <remote name="oich" fetch="https://github.com/Oichkatzelesfrettschen" review="github.com/Oichkatzelesfrettschen" />
+  <remote name="lineage" fetch="https://github.com/LineageOS" />
+
+  <remove-project name="LineageOS/android_build_soong" />
+  <project path="build/soong" name="android_build_soong" remote="oich"
+           revision="b44cd77eaec21eb0a1ddb3313584288db7382b1d"
+           upstream="lineage-18.1" groups="pdk,tradefed">
+    <linkfile src="root.bp" dest="Android.bp" />
+  </project>
+
+  <remove-project name="platform/system/apex" />
+  <project path="system/apex" name="android_system_apex" remote="oich"
+           revision="dd05fe16980ac42db236c24d2e7d4f7d19d5acac"
+           upstream="lineage-18.1" />
+
+  <remove-project name="LineageOS/android_hardware_qcom_wlan" />
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan"
+           remote="oich" revision="0751ddd1fbb427a5bd4ae6eda1279d4c86c1fded"
+           upstream="lineage-18.1-caf" />
+
+  <remove-project name="LineageOS/android_hardware_qcom_audio" />
+  <project path="hardware/qcom-caf/msm8974/audio" name="android_hardware_qcom_audio"
+           remote="oich" revision="06ba6348dc9987ee096b4628eb8ca4945a91e2d5"
+           upstream="lineage-18.1-caf-msm8974" />
+
+  <remove-project name="LineageOS/android_hardware_qcom_media" />
+  <project path="hardware/qcom-caf/msm8974/media" name="android_hardware_qcom_media"
+           remote="oich" revision="67a5c83383604b442fd4c39d4df51c48aca3c277"
+           upstream="lineage-18.1-caf-msm8974" />
+
+  <remove-project name="LineageOS/android_frameworks_base" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="oich"
+           revision="12d5f25a9bd019cff0a1857cbae3b211912b1514"
+           upstream="lineage-18.1" groups="pdk-cw-fs,pdk-fs" />
+
+  <project path="kernel/htc/a11" name="android_kernel_htc_a11" remote="oich"
+           revision="de1259b1419ffc02b67fde199a4b83706625e906"
+           upstream="lineage-18.1-kernel" clone-depth="1" />
+
+  <project path="device/htc/msm8226-common" name="android_device_htc_msm8226-common"
+           remote="oich" revision="c3d68e97479add42989dfc9afc98a5f1adbe1090"
+           upstream="lineage-18.1" />
+
+  <project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common"
+           remote="lineage" revision="3f56559a5436fd7be36fc6b7010ed3506ebe6e08"
+           upstream="lineage-18.1" />
+
+  <project path="hardware/sony/timekeep" name="android_hardware_sony_timekeep"
+           remote="lineage" revision="858c544d1ad1d4811a226372804acbf3011376ef"
+           upstream="lineage-18.1" />
+
+  <project path="device/htc/a11" name="android_device_htc_a11" remote="oich"
+           revision="59bc2cc343ca26eea498a43b0ac08573f4fe4a0f" upstream="lineage-18.1" />
+
+  <project path="vendor/htc/a11chl" name="proprietary_vendor_htc_a11chl"
+           remote="oich" revision="6a8f4349de1eff09a5045d5f922a74ea277bd54b"
+           upstream="lineage-18.1" />
+</manifest>

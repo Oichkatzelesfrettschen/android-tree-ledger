@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="ulh" fetch="https://github.com/Ultra-Legacy-Hippeastrum" />
+  <remote name="gh" fetch="https://github.com" />
+
+  <!-- Ultra-Legacy-Hippeastrum lineage-22.2 forks taken whole: RIL v6/v8/v9,
+       libhidl gBn map, libhwbinder threadpool, jemalloc MADV_FREE. The ULH patches on
+       frameworks/base, frameworks/native, system/core, system/sepolicy, bionic,
+       hardware/qcom-caf/common and hardware/lineage/interfaces are cherry-picked onto
+       the LineageOS 22.2 heads, which those forks trail. -->
+  <remove-project name="LineageOS/android_hardware_ril" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="ulh" revision="lineage-22.2" groups="pdk" />
+  <remove-project name="platform/external/jemalloc_new" />
+  <project path="external/jemalloc_new" name="android_external_jemalloc_new" remote="ulh" revision="lineage-22.2" groups="pdk" />
+  <remove-project name="LineageOS/android_system_libhidl" />
+  <project path="system/libhidl" name="android_system_libhidl" remote="ulh" revision="lineage-22.2" groups="pdk,sysui-studio" />
+  <remove-project name="platform/system/libhwbinder" />
+  <project path="system/libhwbinder" name="android_system_libhwbinder" remote="ulh" revision="lineage-22.2" groups="pdk" />
+
+  <!-- msm8974 display, audio and media HALs built against the m8 kernel UAPI
+       (ion heap_mask, MDSS mdp_overlay pipe_type/scale), as on LineageOS-UL 21. -->
+  <remote name="losul" fetch="https://github.com/LineageOS-UL" />
+  <project path="hardware/qcom-caf/msm8974/audio" name="android_hardware_qcom_audio" remote="losul" revision="lineage-21.0-caf-msm8974" groups="qcom,qcom_audio,pdk-qcom" />
+  <project path="hardware/qcom-caf/msm8974/display" name="android_hardware_qcom_display" remote="losul" revision="lineage-21.0-caf-msm8974" groups="pdk-qcom,qcom,qcom_display" />
+  <project path="hardware/qcom-caf/msm8974/media" name="android_hardware_qcom_media" remote="losul" revision="lineage-21.0-caf-msm8974" groups="qcom,pdk-qcom" />
+  <extend-project name="LineageOS/android_hardware_qcom-caf_common">
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8974/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8974/Android.bp" />
+  </extend-project>
+
+  <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy" remote="ulh" revision="lineage-22.2-legacy" />
+  <project path="system/tools/dtbtool" name="LineageOS-UL/android_system_tools_dtbtool" remote="gh" revision="lineage-21.0" />
+
+  <!-- HTC One M8 -->
+  <project path="kernel/htc/msm8974" name="J0SH1X/android_kernel_htc_msm8974" remote="gh" revision="lineage-22.0" />
+  <project path="device/htc/m8" name="TARKZiM/android_device_htc_m8" remote="gh" revision="lineage-21.0" />
+  <project path="device/htc/m8-common" name="TARKZiM/android_device_htc_m8-common" remote="gh" revision="lineage-21.0" />
+  <project path="device/htc/msm8974-common" name="TARKZiM/android_device_htc_msm8974-common" remote="gh" revision="lineage-21.0" />
+  <project path="vendor/htc" name="TARKZiM/proprietary_vendor_htc" remote="gh" revision="lineage-21.0" />
+</manifest>

@@ -1,0 +1,70 @@
+diff --git a/Android.mk b/Android.mk
+index 383adca..0c5a8a0 100644
+--- a/Android.mk
++++ b/Android.mk
+@@ -503,7 +503,6 @@ TWRP_REQUIRED_MODULES += \
+     privapp-permissions-twrpapp.xml \
+     adbd_system_api_recovery \
+     libsync.recovery \
+-    libandroidicu.recovery \
+     android.hardware.health@2.1-service \
+     android.hardware.health@2.1-impl.recovery \
+     android.hardware.health@2.1-service.rc \
+@@ -553,6 +552,7 @@ TWRP_REQUIRED_MODULES += \
+ 
+ ifneq ($(TW_INCLUDE_CRYPTO),)
+ TWRP_REQUIRED_MODULES += \
++    libandroidicu.recovery \
+     vold_prepare_subdirs \
+     task_recovery_profiles.json \
+     fscryptpolicyget.recovery \
+diff --git a/mtp/ffs/MtpDevHandle.cpp b/mtp/ffs/MtpDevHandle.cpp
+index e22ba55..f55eb5c 100644
+--- a/mtp/ffs/MtpDevHandle.cpp
++++ b/mtp/ffs/MtpDevHandle.cpp
+@@ -60,6 +60,9 @@ int MtpDevHandle::sendEvent(mtp_event me) {
+ }
+ 
+ int MtpDevHandle::start(bool /* ptp */) {
++	// f_mtp's mtp_open admits one opener and returns -EBUSY to a second, so a
++	// descriptor passed in at construction stays in use.
++	if (mFd != -1) return 0;
+ 	mFd.reset(TEMP_FAILURE_RETRY(open(mtp_dev_path, O_RDWR)));
+ 	if (mFd == -1) return -1;
+ 	return 0;
+diff --git a/mtp/ffs/mtp_MtpServer.cpp b/mtp/ffs/mtp_MtpServer.cpp
+index ce890d1..75a441d 100755
+--- a/mtp/ffs/mtp_MtpServer.cpp
++++ b/mtp/ffs/mtp_MtpServer.cpp
+@@ -74,7 +74,9 @@ void twmtp_MtpServer::start()
+ 		MTPD("Opening FFS EPO\n");
+ 		controlFd = open(FFS_MTP_EP0, O_RDWR);
+ 	} else {
+-		controlFd = open(mtp_device, O_WRONLY);
++		/* MtpDevHandle reads and writes through this descriptor; f_mtp
++		 * admits one opener at a time (open_excl). */
++		controlFd = open(mtp_device, O_RDWR);
+ 	}
+ 	if (controlFd < 0) {
+ 		MTPE("could not open MTP driver, errno: %d\n", errno);
+diff --git a/prebuilt/Android.mk b/prebuilt/Android.mk
+index 3197ec1..bad46df 100755
+--- a/prebuilt/Android.mk
++++ b/prebuilt/Android.mk
+@@ -83,9 +83,13 @@ RECOVERY_LIBRARY_SOURCE_FILES += $(TARGET_OUT_SHARED_LIBRARIES)/libbinder.so
+ RECOVERY_LIBRARY_SOURCE_FILES += $(TARGET_OUT_SHARED_LIBRARIES)/libbinder_ndk.so
+ RECOVERY_LIBRARY_SOURCE_FILES += $(TARGET_OUT_SHARED_LIBRARIES)/libchrome.so
+ RECOVERY_LIBRARY_SOURCE_FILES += $(TARGET_OUT_SHARED_LIBRARIES)/libevent.so
+-RECOVERY_BINARY_SOURCE_FILES += $(TARGET_OUT_EXECUTABLES)/keystore
+-RECOVERY_BINARY_SOURCE_FILES += $(TARGET_OUT_EXECUTABLES)/keystore_auth
+-RECOVERY_BINARY_SOURCE_FILES += $(TARGET_OUT_EXECUTABLES)/keystore_cli_v2
++# The keystore clients link the keystore2 AIDL and keymint libraries that
++# only the TW_INCLUDE_CRYPTO module list installs.
++ifeq ($(TW_INCLUDE_CRYPTO), true)
++    RECOVERY_BINARY_SOURCE_FILES += $(TARGET_OUT_EXECUTABLES)/keystore
++    RECOVERY_BINARY_SOURCE_FILES += $(TARGET_OUT_EXECUTABLES)/keystore_auth
++    RECOVERY_BINARY_SOURCE_FILES += $(TARGET_OUT_EXECUTABLES)/keystore_cli_v2
++endif
+ RECOVERY_BINARY_SOURCE_FILES += $(TARGET_OUT_EXECUTABLES)/hwservicemanager
+ RECOVERY_BINARY_SOURCE_FILES += $(TARGET_OUT_EXECUTABLES)/servicemanager
+ RECOVERY_BINARY_SOURCE_FILES += $(TARGET_OUT_EXECUTABLES)/vold_prepare_subdirs

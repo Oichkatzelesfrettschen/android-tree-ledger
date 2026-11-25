@@ -1,0 +1,15 @@
+source_tree	path	source_ref	owner_repository	pushed_ref	sha	verified
+tuna/lineage-18.1	bionic	HEAD	Oichkatzelesfrettschen/android_bionic	dev/tuna/lineage-18.1	a95b94891d5e39d512a5e24feb81b62a9232f46a	ls-remote tip
+tuna/lineage-18.1	frameworks/base	HEAD	Oichkatzelesfrettschen/android_frameworks_base	dev/tuna/lineage-18.1	082f204127ac8723bcd7583c7dd7848467d31cfc	ls-remote tip
+tuna/lineage-18.1	packages/apps/PermissionController	HEAD	Oichkatzelesfrettschen/android_packages_apps_PackageInstaller	dev/tuna/lineage-18.1	1b44d574227dc797bfa1011986f375992b75c92d	ls-remote tip
+tuna/lineage-18.1	system/apex	HEAD	Oichkatzelesfrettschen/android_system_apex	dev/tuna/lineage-18.1	aea2930c1b9666634702ae990d76356ea56cb478	ls-remote tip
+tuna/lineage-18.1	system/libhidl	HEAD	Oichkatzelesfrettschen/android_system_libhidl	dev/tuna/lineage-18.1	988e15d4eb118d4d75ebfc5d4467488d3493adc3	ls-remote tip
+tuna/lineage-18.1	vendor/lineage	HEAD	Oichkatzelesfrettschen/android_vendor_lineage	dev/tuna/lineage-18.1	231bec0552babac7cb870ec2aa0bd56ebf8011c6	ls-remote tip
+tuna/lineage-18.1	vendor/samsung	HEAD	Oichkatzelesfrettschen/proprietary_vendor_samsung-themuppets	dev/tuna/lineage-18.1	5ebbff5488599f16eea204d2d11b7bb23e144f13	ls-remote tip
+tuna/lineage-18.1	vendor/ti	HEAD	Oichkatzelesfrettschen/proprietary_vendor_ti	dev/tuna/lineage-18.1	fd79492f508b981e818029ca57a4c2daac2ef078	ls-remote tip
+standalone	tuna/android_kernel_samsung_tuna	HEAD	Oichkatzelesfrettschen/android_kernel_samsung_tuna	dev/tuna/lineage-18.1	f87a5d76e80525ae898231b81e33394dbf44b94f	ls-remote tip
+standalone	tuna/android_kernel_samsung_tuna	feature/tuna-clang-thinlto-kbuild	Oichkatzelesfrettschen/android_kernel_samsung_tuna	topic/tuna/lineage-18.1/feature/tuna-clang-thinlto-kbuild	87ac2e6e52bedafa101718df586592e327c7677c	ls-remote tip
+standalone	tuna/android_kernel_samsung_tuna	random/omap4-boot-entropy	Oichkatzelesfrettschen/android_kernel_samsung_tuna	topic/tuna/lineage-18.1/random/omap4-boot-entropy	50073a7f685ae015946c36026ded5a40e6b51e85	ls-remote tip
+standalone	tuna/android_kernel_samsung_tuna	rproc-autosuspend-watchdog	Oichkatzelesfrettschen/android_kernel_samsung_tuna	topic/tuna/lineage-18.1/rproc-autosuspend-watchdog	2f092877a8a6b159e638764a8c69687ea724c927	ls-remote tip
+standalone	tuna/android_hardware_ti_omap4	HEAD	Oichkatzelesfrettschen/android_hardware_ti_omap4	dev/tuna/lineage-18.1	d8470c05570557c09b7cad91b7963d1e22ba948a	ls-remote tip
+standalone	tuna/android_hardware_ti_omap4	lineage-18.1	Oichkatzelesfrettschen/android_hardware_ti_omap4	topic/tuna/lineage-18.1/lineage-18.1	21ff601abab14dacffd94615c23ffab4da02cb01	ls-remote tip

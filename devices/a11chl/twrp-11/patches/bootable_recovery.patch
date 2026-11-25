@@ -1,0 +1,22 @@
+diff --git a/prebuilt/Android.mk b/prebuilt/Android.mk
+index 6b5490a..affe371 100755
+--- a/prebuilt/Android.mk
++++ b/prebuilt/Android.mk
+@@ -572,6 +572,9 @@ ifneq ($(TW_EXCLUDE_TZDATA), true)
+     include $(BUILD_PHONY_PACKAGE)
+ endif
+ 
++# TW_EXCLUDE_NANO nano_twrp guard: brings this phony package under the
++# same flag the relink source-file lists above already use.
++ifneq ($(TW_EXCLUDE_NANO), true)
+ include $(CLEAR_VARS)
+ LOCAL_MODULE := nano_twrp
+ LOCAL_MODULE_TAGS := optional
+@@ -582,6 +585,7 @@ LOCAL_POST_INSTALL_CMD += \
+     cp -rf $(TARGET_OUT_ETC)/nano $(TARGET_RECOVERY_ROOT_OUT)/system/etc/; \
+     cp -rf external/libncurses/lib/terminfo $(TARGET_RECOVERY_ROOT_OUT)/system/etc/;
+ include $(BUILD_PHONY_PACKAGE)
++endif
+ 
+ ifneq ($(TW_EXCLUDE_BASH), true)
+ 	include $(CLEAR_VARS)

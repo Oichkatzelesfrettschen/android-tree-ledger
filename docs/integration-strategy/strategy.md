@@ -1,5 +1,7 @@
 # Integration strategy for the retiring Android trees
 
+Status (2026-11-25): carried out. 109 local refs pushed and verified as exact tips; all pins of the nine manifests verified (checks/results). Two owner decisions after the round change the course: the a11 and tuna lines roll into LineageOS 22.2 instead of a synth/lineage-19.1 branch, and the TWRP work moves onto twrp-14.1. Directory ids are devices/<device>/<track>, which replaces the manifest-id form below. Three open device-repository pull requests were merged on the owner's instruction.
+
 Outcome of the red-team round (reports/, reconciliation.md) as integrated by the Advisor on 2026-11-24. The material/ tables are frozen as reviewed; corrected per-project data lives in devices/<manifest-id>/repos.tsv.
 
 ## Layout

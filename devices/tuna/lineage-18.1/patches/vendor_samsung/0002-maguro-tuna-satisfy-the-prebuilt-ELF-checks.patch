@@ -1,0 +1,97 @@
+From 5ebbff5488599f16eea204d2d11b7bb23e144f13 Mon Sep 17 00:00:00 2001
+From: eirikr <151315375+Oichkatzelesfrettschen@users.noreply.github.com>
+Date: Wed, 23 Sep 2026 07:25:21 -0700
+Subject: [PATCH 2/2] maguro, tuna: satisfy the prebuilt ELF checks
+
+The SiRF GPS library's DT_SONAME is lib_gsd4t_jellybean.so, so it now
+installs under that name in /vendor/lib instead of posing as the
+gps.omap4 HAL module; the tuna GPS shim loads it by path. libsec-ril
+declares libhardware_legacy, the run-time home of acquire_wake_lock, and
+the GPS library declares the libprocessgroup and libshim_gps_ssl
+libraries the linker shims add to its load group. The GCC runtime helpers
+(__aeabi_*) the three blobs import resolve against libc's LIBC_PRIVATE ARM
+exports, which the checker's stub omits, so their symbol check is off
+while the DT_NEEDED check stays on.
+
+Assisted-by: Claude Code (claude-opus)
+Change-Id: Ic9183a95f871febdf8aedfde46701135a8d12f2a
+---
+ maguro/Android.mk       | 19 +++++++++++++++----
+ maguro/maguro-vendor.mk |  2 +-
+ tuna/Android.mk         |  2 ++
+ 3 files changed, 18 insertions(+), 5 deletions(-)
+
+diff --git a/maguro/Android.mk b/maguro/Android.mk
+index 5b6ae1e..e0a5289 100644
+--- a/maguro/Android.mk
++++ b/maguro/Android.mk
+@@ -4,6 +4,13 @@ LOCAL_PATH := $(call my-dir)
+ 
+ ifeq ($(TARGET_DEVICE),maguro)
+ 
++# The GCC 4.x runtime helpers these blobs import (__aeabi_idiv,
++# __aeabi_d2f and the like) resolve at run time against libc's LIBC_PRIVATE
++# ARM exports, which the NDK stub the ELF checker reads does not list; the
++# symbol check is therefore off for them, while the DT_NEEDED check stays.
++
++# acquire_wake_lock comes from libhardware_legacy, which libsecril-compat
++# pulls into the same load group.
+ include $(CLEAR_VARS)
+ LOCAL_MODULE := libsec-ril
+ LOCAL_MODULE_OWNER := samsung
+@@ -11,19 +18,23 @@ LOCAL_SRC_FILES := proprietary/vendor/lib/libsec-ril.so
+ LOCAL_MODULE_SUFFIX := .so
+ LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+ LOCAL_MODULE_TARGET_ARCH := arm
+-LOCAL_SHARED_LIBRARIES := libbinder libcutils liblog libril libsecril-compat libstdc++
++LOCAL_SHARED_LIBRARIES := libbinder libcutils libhardware_legacy liblog libril libsecril-compat libstdc++
++LOCAL_ALLOW_UNDEFINED_SYMBOLS := true
+ LOCAL_VENDOR_MODULE := true
+ include $(BUILD_PREBUILT)
+ 
++# The SiRF GSD4t library installs under its DT_SONAME; gps.tuna dlopens it
++# by path. TARGET_LD_SHIM_LIBS adds libprocessgroup (get_sched_policy) and
++# libshim_gps_ssl (SSLv3_client_method) to its load group.
+ include $(CLEAR_VARS)
+-LOCAL_MODULE := gps.omap4
++LOCAL_MODULE := lib_gsd4t_jellybean
+ LOCAL_MODULE_OWNER := samsung
+ LOCAL_SRC_FILES := proprietary/vendor/lib/hw/gps.omap4.so
+ LOCAL_MODULE_SUFFIX := .so
+ LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+ LOCAL_MODULE_TARGET_ARCH := arm
+-LOCAL_MODULE_RELATIVE_PATH := hw
+-LOCAL_SHARED_LIBRARIES := libcrypto libcutils liblog libssl libstdc++ libutils
++LOCAL_SHARED_LIBRARIES := libcrypto libcutils liblog libprocessgroup libshim_gps_ssl libssl libstdc++ libutils
++LOCAL_ALLOW_UNDEFINED_SYMBOLS := true
+ LOCAL_VENDOR_MODULE := true
+ include $(BUILD_PREBUILT)
+ 
+diff --git a/maguro/maguro-vendor.mk b/maguro/maguro-vendor.mk
+index 4fbfd12..08159ac 100644
+--- a/maguro/maguro-vendor.mk
++++ b/maguro/maguro-vendor.mk
+@@ -2,6 +2,6 @@
+ 
+ PRODUCT_PACKAGES += \
+     bcm4330.hcd \
+-    gps.omap4 \
++    lib_gsd4t_jellybean \
+     libsec-ril \
+     sirfgps.conf
+diff --git a/tuna/Android.mk b/tuna/Android.mk
+index 3a3759d..510d9ae 100644
+--- a/tuna/Android.mk
++++ b/tuna/Android.mk
+@@ -12,6 +12,8 @@ LOCAL_MODULE_SUFFIX := .so
+ LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+ LOCAL_MODULE_TARGET_ARCH := arm
+ LOCAL_SHARED_LIBRARIES := libcutils libutils libmllite libmlplatform
++# __aeabi_d* soft-float helpers resolve against libc's LIBC_PRIVATE exports.
++LOCAL_ALLOW_UNDEFINED_SYMBOLS := true
+ LOCAL_VENDOR_MODULE := true
+ include $(BUILD_PREBUILT)
+ 
+-- 
+2.56.1
+

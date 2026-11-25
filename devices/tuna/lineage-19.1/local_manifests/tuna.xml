@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Maguro on LineageOS 19.1. Device projects follow the forks'
+       lineage-19.1 branches; platform projects carrying tuna-only changes
+       follow lineage-19.1-tuna, cut at the LineageOS commit this tree
+       synced, so the shared lineage-19.1 branches stay untouched. The kernel
+       is the Clang 22 ThinLTO line shared with 18.1.
+
+       Tree state outside this manifest: manifest.groups=default,-darwin in
+       .repo/manifests.git, so build-manifest.xml (repo manifest -r) names
+       only checked-out projects; external/chromium-webview/prebuilt/arm
+       carries its webview.apk LFS object (a repository-local git lfs install,
+       then git lfs pull); vendor/microg stores its APKs in Git LFS, so its
+       checkout needs the same repository-local install and pull. -->
+  <remote name="oich" fetch="https://github.com/Oichkatzelesfrettschen" review="github.com/Oichkatzelesfrettschen" />
+
+  <remove-project name="LineageOS/android_build_soong" />
+  <project path="build/soong" name="android_build_soong" remote="oich" revision="76a373d6b1db06b436d1736bc872660053d35768" upstream="lineage-19.1" groups="pdk,tradefed" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <remove-project name="LineageOS/android_bionic" />
+  <project path="bionic" name="android_bionic" remote="oich" revision="99a3ad50f83a3fb0d57ef7aff699aa150b9ab268" upstream="lineage-19.1-tuna" groups="pdk" />
+  <remove-project name="LineageOS/android_system_libhidl" />
+  <project path="system/libhidl" name="android_system_libhidl" remote="oich" revision="b8f786f64a283450a97c1cbbbed763ef03d402ae" upstream="lineage-19.1-tuna" groups="pdk" />
+  <remove-project name="platform/system/bpf" />
+  <project path="system/bpf" name="android_system_bpf" remote="oich" revision="c0cff3536654ff57aedc21d62ee01ab70e7705ba" upstream="lineage-19.1-tuna" groups="pdk" />
+  <remove-project name="LineageOS/android_system_netd" />
+  <project path="system/netd" name="android_system_netd" remote="oich" revision="ba413acbd62015f58ad77926c05bcbabb8884f4d" upstream="lineage-19.1-tuna" groups="pdk" />
+  <remove-project name="LineageOS/android_packages_modules_adb" />
+  <project path="packages/modules/adb" name="android_packages_modules_adb" remote="oich" revision="1f3ce3bfb460fa37aaf116c57774374060f3234e" upstream="lineage-19.1-tuna" groups="pdk" />
+  <remove-project name="platform/external/OpenCSD" />
+  <project path="external/OpenCSD" name="android_external_OpenCSD" remote="oich" revision="7edc98b34f5215eb9a931f7b26fab8e1e5078015" upstream="lineage-19.1-tuna" groups="pdk" />
+  <remove-project name="LineageOS/android_hardware_lineage_interfaces" />
+  <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="oich" revision="1137542dff56fd4e922d8e83e46ca596c1e5be71" upstream="lineage-19.1-tuna" />
+  <remove-project name="LineageOS/android_vendor_lineage" />
+  <project path="vendor/lineage" name="android_vendor_lineage" remote="oich" revision="ac88ea4ac7803e0695727312708b5bc7fda4e916" upstream="lineage-19.1-tuna" />
+  <remove-project name="LineageOS/android_system_sepolicy" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="oich" revision="25e9f16e7d36fe4babd1d5a346d59d72837b1d8a" upstream="lineage-19.1-tuna" groups="pdk" />
+  <remove-project name="platform/art" />
+  <project path="art" name="android_art" remote="oich" revision="878ea443bb98f6290c780c347febd0d87abfc563" upstream="lineage-19.1-tuna" groups="pdk" clone-depth="1" />
+  <remove-project name="LineageOS/android_frameworks_base" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="oich" revision="e1a489e432ef750daac09080c1a50eee4effb1e2" upstream="lineage-19.1-tuna" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
+
+  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="oich" revision="642ae2a4bc057fdb521005bf3d5832266fd5c301" upstream="lineage-19.1" />
+  <project path="device/samsung/maguro" name="android_device_samsung_maguro" remote="oich" revision="fa9ff4b31bdc1e8ef7d5c758d0daf6382870c2c4" upstream="lineage-19.1" />
+  <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="oich" revision="3450fee356ba09de391104416a546e10b26cd4a0" upstream="feature/tuna-clang-thinlto-kbuild" clone-depth="1" />
+  <project path="hardware/ti/omap4" name="android_hardware_ti_omap4" remote="oich" revision="9568242dd0b049e8263996ea484e5db2e0de5d83" upstream="lineage-19.1" />
+  <project path="vendor/ti" name="proprietary_vendor_ti" remote="oich" revision="ca92041c1501bee1c34e76726960979645f7772c" upstream="stable" />
+  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="oich" revision="0d5f69f430a292ff710b25eeec33ec1ea5a98dd1" upstream="lineage-18.1" />
+  <project path="vendor/microg" name="android_vendor_microg" remote="oich" revision="896d316340800b50d4b9816d677cf311115481dd" upstream="lineage-19.1" />
+  <project path="external/jhead" name="android_external_jhead" remote="oich" revision="27ecb75f03f8a6c1b1a2f2ff240e918d2cb78754" upstream="lineage-18.1" />
+</manifest>

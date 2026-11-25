@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Galaxy Nexus GSM (maguro, board tuna) on LineageOS 18.1: the live
+       tree at $HOME/Projects/Android/trees/tuna/lineage-18.1, tracked here as this
+       tree's own .repo/local_manifests/tuna.xml carries no git history
+       of its own. Each project carries a local lineage-18.1 branch on
+       top of the revision named here; kernel/samsung/tuna takes its
+       lineage-18.1 branch from the local backport tree.
+
+       The "oich" remote is the Oichkatzelesfrettschen fork holding source
+       commits that exist only in a local branch and nowhere upstream. A
+       `repo sync` resolves these projects against that fork so an
+       upstream history rewrite cannot drop them.
+
+       frameworks/native carries the same fork pattern as of the
+       renderengine-attached-framebuffers merge: no feature branch existed
+       before it, so its revision is the oich mirror's lineage-18.1 branch
+       (the base manifest's own upstream, unmodified before this merge). -->
+  <remote name="oich" fetch="https://github.com/Oichkatzelesfrettschen" review="github.com/Oichkatzelesfrettschen" />
+  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="oich" revision="a113bc52e0221e2c96988d14de5226f166996581" upstream="lineage-18.1" />
+  <project path="device/samsung/maguro" name="android_device_samsung_maguro" remote="oich" revision="6bafffb50cd04d09fb12d799c14b0efa58a4b4e3" upstream="lineage-18.1" />
+  <!-- The kernel pin is the flashed boot kernel's tree: the Clang ThinLTO
+       line with the i_dentry init in inode_init_always and the OMAP4
+       bandgap ladder (920/700/350 MHz from 70/78/99 C sensor, TSHUT
+       108 C), which the device tree builds with clang-r584948 under
+       LTO_CLANG_THIN. upstream names the branch that holds the pinned SHA;
+       a clone-depth 1 fetch requests the SHA itself, which GitHub serves
+       for any commit reachable from a branch. -->
+  <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="oich" revision="ac5242b3c58b904f9b1aac8b8e0fe853effb7aa5" upstream="feature/tuna-clang-thinlto-kbuild" clone-depth="1" />
+  <remove-project name="LineageOS/android_hardware_interfaces" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="oich" revision="bac8a8d7a5be2d0d7e39036224c1f7ce8dc333bd" upstream="lineage-18.1" />
+  <project path="hardware/ti/omap4" name="android_hardware_ti_omap4" remote="oich" revision="c0dd1280da6cb4db9e7a64cb8f4a88d1b52bf2bc" upstream="lineage-18.1" />
+  <!-- vendor/ti and vendor/samsung are private repositories: the proprietary
+       files of Unlegacy-Android/proprietary_vendor_ti (stable) and the
+       maguro and tuna directories of TheMuppets/proprietary_vendor_samsung
+       (cm-14.1), each with the tuna build's blob-packaging commits on top.
+       Fetching them needs the account's GitHub credentials. -->
+  <project path="vendor/ti" name="proprietary_vendor_ti" remote="oich" revision="ca92041c1501bee1c34e76726960979645f7772c" upstream="stable" />
+  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="oich" revision="0d5f69f430a292ff710b25eeec33ec1ea5a98dd1" upstream="lineage-18.1" />
+  <!-- EXIF writer for the OMAP4 camera HAL; AOSP dropped jhead in Android 10.
+       Base platform/external/jhead 9c6e507bb38e1cede54c392058fd6ba42f0ef0a7
+       plus the -Werror fix that drops the statics only jhead.c's main() reads. -->
+  <project path="external/jhead" name="android_external_jhead" remote="oich" revision="27ecb75f03f8a6c1b1a2f2ff240e918d2cb78754" upstream="lineage-18.1" />
+  <!-- frameworks/base is the fork's lineage-18.1: LineageOS lineage-18.1
+       with the fork's ASB backports, plus the tuna heads (ColorFade EGL
+       detach, the microG FAKE_PACKAGE_SIGNATURE gate, hwui CPU fill of
+       hardware bitmaps at the gralloc stride) and the renderthread.skia.*
+       GrContext and fading-edge options. -->
+  <remove-project name="LineageOS/android_frameworks_base" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="oich" revision="5146c4b07332f7831597ad40dfca49bb60234cb0" upstream="lineage-18.1" groups="pdk-cw-fs,pdk-fs" />
+  <remove-project name="LineageOS/android_frameworks_native" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="oich" revision="8a0c9d26ab15d7ba9a2e2c9829e0b3cfd1c46190" upstream="lineage-18.1" groups="pdk" />
+
+  <!-- build/soong: base manifest's own LineageOS/android_build_soong pin
+       570eaae5ca6125203ebecc8795ab407e7d843bae, plus one commit adding a
+       "cortex-a9" entry to armClangCpuVariantCflags (-mcpu=cortex-a9
+       -mfpu=neon, no vfpv4, no idiv: this A9 core has neither unit).
+       Without it, TARGET_CPU_VARIANT := cortex-a9
+       (hardware/ti/omap4/BoardConfigCommon.mk) is a silent no-op:
+       variantOrDefault() falls back to the generic/unturned cflags on a
+       missing map key, confirmed live in this tree's own
+       out/combined-lineage_maguro.ninja (a real SurfaceFlingerConfigs.o
+       compile carries no -mcpu= at all). Verified against this tree's
+       own clang-r383902b1 (android-device-workbench's
+       notes/TOOLCHAIN_TUNING.md Section E). The fork's lineage-18.1
+       carries that line with the opt-in GLOBAL_THINLTO=true switch, which
+       keeps static executables out of implicit ThinLTO because Android 11
+       bionic stops its .init_array walk at the first zero entry, the
+       gensrcs and proto shards under MAX_ARG_STRLEN, and per-Clang-release
+       flag selection. Under clang-r383902b1 the compile, archive and link
+       flag variables of the generated build.ninja equal those of the line
+       without that selection, apart from llvm-ar's double-dash format=gnu spelling,
+       with which Clang 11's llvm-ar writes byte-identical archives. -->
+  <remove-project name="LineageOS/android_build_soong" />
+  <project path="build/soong" name="android_build_soong" remote="oich" revision="cfac1934bba08018f82c3184d350c2288e5bbce0" upstream="lineage-18.1" groups="pdk,tradefed">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Projects whose tuna build carries commits beyond the base manifest:
+       each fork's lineage-18.1-tuna branch is the base manifest's revision
+       plus those commits. bionic and system/libhidl carry rinando's i9100
+       legacy-blob compatibility (invalid pthread_t, dlopen SDK override,
+       hidl_string zero termination); PermissionController maps microG's
+       FAKE_PACKAGE_SIGNATURE; vendor/lineage keeps -fuse-ld=lld out of the
+       kernel HOSTCFLAGS; system/apex gives apexer's mke2fs a fixed profile. -->
+  <remove-project name="LineageOS/android_bionic" />
+  <project path="bionic" name="android_bionic" remote="oich" revision="016220c4ec5c5e6d4a2e668b02a189e9078eb75c" upstream="lineage-18.1-tuna" groups="pdk" />
+  <remove-project name="LineageOS/android_system_libhidl" />
+  <project path="system/libhidl" name="android_system_libhidl" remote="oich" revision="28bacc89e37727f358a6585a85ed68469e22f6cf" upstream="lineage-18.1-tuna" groups="pdk" />
+  <remove-project name="LineageOS/android_packages_apps_PackageInstaller" />
+  <project path="packages/apps/PermissionController" name="android_packages_apps_PackageInstaller" remote="oich" revision="ff8a11b8ec05c8390cd5d020cee8ca36dc7ccf19" upstream="lineage-18.1-tuna" groups="pdk-cw-fs,pdk-fs" />
+  <remove-project name="LineageOS/android_vendor_lineage" />
+  <project path="vendor/lineage" name="android_vendor_lineage" remote="oich" revision="a063166e54ab54defc0f9a958c8b020b8aa2e4f5" upstream="lineage-18.1-tuna" />
+  <remove-project name="platform/system/apex" />
+  <project path="system/apex" name="android_system_apex" remote="oich" revision="b376ae4b5f6b4627b0e949385428e7a2c00dbf1e" upstream="lineage-18.1-tuna" groups="pdk" />
+
+  <!-- build/make, external/skia, art and system/netd carry compiler-neutral
+       fixes that a Clang 22 userspace build needs (llvm-ar's double-dash format option,
+       an unreachable SkSL comparison, a shadowed constant, clang-tidy
+       findings); the userspace still builds with Clang 11, where each
+       fix compiles to the same code. -->
+  <remove-project name="LineageOS/android_build" />
+  <project path="build/make" name="android_build" remote="oich" revision="4997a5d6af7cce9daf5e1a6599579d3c45c5d74f" upstream="lineage-18.1-tuna" groups="pdk">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <remove-project name="LineageOS/android_external_skia" />
+  <project path="external/skia" name="android_external_skia" remote="oich" revision="ab28b82bf58e5ca0781bc0f0fbba14f1c3747a10" upstream="lineage-18.1-tuna" groups="pdk,qcom_msm8x26" />
+  <remove-project name="LineageOS/android_art" />
+  <project path="art" name="android_art" remote="oich" revision="8e796f1cab099a41ef03167d404d02652147b413" upstream="lineage-18.1-tuna" groups="pdk" />
+  <remove-project name="LineageOS/android_system_netd" />
+  <project path="system/netd" name="android_system_netd" remote="oich" revision="2964c5e420385616eb4181f94f84756fa2cdb6d7" upstream="lineage-18.1-tuna" groups="pdk" />
+
+  <!-- microG GmsCore and Companion prebuilts; the APKs are Git LFS objects,
+       so the checkout needs a repository-local git lfs install and pull. -->
+  <project path="vendor/microg" name="android_vendor_microg" remote="oich" revision="621758c7687491ed78e560f24dd4b50e8b7863f1" upstream="lineage-18.1" />
+</manifest>

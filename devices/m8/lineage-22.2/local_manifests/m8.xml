@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest>
+  <remote name="ulh" fetch="https://github.com/Ultra-Legacy-Hippeastrum" />
+  <remote name="gh" fetch="https://github.com" />
+  <!-- Ultra-Legacy-Hippeastrum lineage-22.2 forks taken whole: RIL v6/v8/v9,
+       libhidl gBn map, libhwbinder threadpool, jemalloc MADV_FREE. The ULH patches on
+       frameworks/base, frameworks/native, system/core, system/sepolicy, bionic,
+       hardware/qcom-caf/common and hardware/lineage/interfaces are cherry-picked onto
+       the LineageOS 22.2 heads, which those forks trail. -->
+  <remove-project name="LineageOS/android_hardware_ril" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="ulh" revision="lineage-22.2" groups="pdk" />
+  <remove-project name="platform/external/jemalloc_new" />
+  <project path="external/jemalloc_new" name="android_external_jemalloc_new" remote="ulh" revision="lineage-22.2" groups="pdk" />
+  <remove-project name="LineageOS/android_system_libhidl" />
+  <project path="system/libhidl" name="android_system_libhidl" remote="ulh" revision="lineage-22.2" groups="pdk,sysui-studio" />
+  <remove-project name="platform/system/libhwbinder" />
+  <project path="system/libhwbinder" name="android_system_libhwbinder" remote="ulh" revision="lineage-22.2" groups="pdk" />
+  <!-- msm8974 display, audio and media HALs built against the m8 kernel UAPI
+       (ion heap_mask, MDSS mdp_overlay pipe_type/scale), as on LineageOS-UL 21. -->
+  <remote name="losul" fetch="https://github.com/LineageOS-UL" />
+  <project path="hardware/qcom-caf/msm8974/audio" name="Oichkatzelesfrettschen/android_hardware_qcom_audio" remote="gh" revision="lineage-22.2-caf-msm8974" groups="qcom,qcom_audio,pdk-qcom" />
+  <project path="hardware/qcom-caf/msm8974/display" name="Oichkatzelesfrettschen/android_hardware_qcom_display" remote="gh" revision="lineage-22.2-caf-msm8974" groups="pdk-qcom,qcom,qcom_display" />
+  <project path="hardware/qcom-caf/msm8974/media" name="Oichkatzelesfrettschen/android_hardware_qcom_media" remote="gh" revision="lineage-22.2-caf-msm8974" groups="qcom,pdk-qcom" />
+  <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy" remote="ulh" revision="lineage-22.2-legacy" />
+  <project path="system/tools/dtbtool" name="LineageOS-UL/android_system_tools_dtbtool" remote="gh" revision="lineage-21.0" />
+  <!-- HTC One M8 -->
+  <project path="kernel/htc/msm8974" name="Oichkatzelesfrettschen/android_kernel_htc_msm8974" remote="gh" revision="lineage-22.2" />
+  <project path="device/htc/m8" name="Oichkatzelesfrettschen/android_device_htc_m8" remote="gh" revision="lineage-22.2" />
+  <project path="device/htc/m8-common" name="Oichkatzelesfrettschen/android_device_htc_m8-common" remote="gh" revision="lineage-22.2" />
+  <project path="device/htc/msm8974-common" name="Oichkatzelesfrettschen/android_device_htc_msm8974-common" remote="gh" revision="lineage-22.2" />
+  <project path="vendor/htc" name="Oichkatzelesfrettschen/proprietary_vendor_htc_m8" remote="gh" revision="lineage-22.2" />
+  <remove-project name="LineageOS/android_system_netd" />
+  <project name="Oichkatzelesfrettschen/android_system_netd" path="system/netd" groups="pdk" remote="gh" revision="lineage-22.2" />
+  <remove-project name="LineageOS/android_frameworks_base" />
+  <project name="Oichkatzelesfrettschen/android_frameworks_base" path="frameworks/base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="gh" revision="lineage-22.2" />
+  <remove-project name="LineageOS/android_frameworks_native" />
+  <project name="Oichkatzelesfrettschen/android_frameworks_native" path="frameworks/native" groups="pdk" remote="gh" revision="lineage-22.2" />
+  <remove-project name="LineageOS/android_system_core" />
+  <project name="Oichkatzelesfrettschen/android_system_core" path="system/core" groups="pdk" remote="gh" revision="lineage-22.2" />
+  <remove-project name="LineageOS/android_system_sepolicy" />
+  <project name="Oichkatzelesfrettschen/android_system_sepolicy" path="system/sepolicy" groups="pdk" remote="gh" revision="lineage-22.2" />
+  <remove-project name="LineageOS/android_bionic" />
+  <project name="Oichkatzelesfrettschen/android_bionic" path="bionic" groups="pdk" remote="gh" revision="lineage-22.2" />
+  <remove-project name="platform/external/perfetto" />
+  <project name="Oichkatzelesfrettschen/android_external_perfetto" path="external/perfetto" groups="pdk,sysui-studio" remote="gh" revision="lineage-22.2" />
+  <remove-project name="LineageOS/android_packages_apps_Aperture" />
+  <project name="Oichkatzelesfrettschen/android_packages_apps_Aperture" path="packages/apps/Aperture" remote="gh" revision="lineage-22.2" />
+  <remove-project name="LineageOS/android_hardware_lineage_interfaces" />
+  <project name="Oichkatzelesfrettschen/android_hardware_lineage_interfaces" path="hardware/lineage/interfaces" remote="gh" revision="lineage-22.2" />
+  <remove-project name="LineageOS/android_hardware_qcom-caf_common" />
+  <project name="Oichkatzelesfrettschen/android_hardware_qcom-caf_common" path="hardware/qcom-caf/common" groups="qcom" remote="gh" revision="lineage-22.2">
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8953/Android.bp" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm660/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8450/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450/Android.bp" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8550/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8650/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8750/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8750/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8974/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8974/Android.bp" />
+  </project>
+  <remove-project name="LineageOS/android_frameworks_av" />
+  <project name="Oichkatzelesfrettschen/android_frameworks_av" path="frameworks/av" groups="pdk" remote="gh" revision="lineage-22.2" />
+  <remove-project name="LineageOS/android_packages_apps_Nfc" />
+  <project name="Oichkatzelesfrettschen/android_packages_apps_Nfc" path="packages/apps/Nfc" groups="apps_nfc,pdk-cw-fs,pdk-fs" remote="gh" revision="lineage-22.2" />
+  <project path="external/libnfc-nxp" name="Oichkatzelesfrettschen/android_external_libnfc-nxp" remote="gh" revision="lineage-22.2" />
+  <project path="packages/apps/PhhIms" name="ims" remote="ulh" revision="a6ab624109e2ba01d6d9e59755114fd85c2b5f8e" upstream="hammerhead" sync-s="true" />
+  <!-- Fork heads for the Clang 22 compatibility fixes and the toolchain
+       switch, so a repo sync keeps every source the lane used to patch in at
+       build time. lmkd stays at 0dcb0e6, the zoneinfo tree every flashed
+       build carries; the fork head's parser fix makes lmkd's vmpressure
+       path act beside the in-kernel lowmemorykiller and lands with its own
+       single-killer change. -->
+  <remove-project name="LineageOS/android_build_soong" />
+  <project name="Oichkatzelesfrettschen/android_build_soong" path="build/soong" groups="pdk,sysui-studio,tradefed" remote="gh" revision="lineage-22.2">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <remove-project name="LineageOS/android_art" />
+  <project name="Oichkatzelesfrettschen/android_art" path="art" groups="pdk" remote="gh" revision="lineage-22.2" />
+  <remove-project name="platform/external/icu" />
+  <project name="Oichkatzelesfrettschen/android_external_icu" path="external/icu" groups="pdk" remote="gh" revision="lineage-22.2" />
+  <remove-project name="platform/system/tools/hidl" />
+  <project name="Oichkatzelesfrettschen/android_system_tools_hidl" path="system/tools/hidl" groups="pdk" remote="gh" revision="lineage-22.2" />
+  <remove-project name="platform/external/tensorflow" />
+  <project name="Oichkatzelesfrettschen/android_external_tensorflow" path="external/tensorflow" groups="pdk" remote="gh" revision="lineage-22.2" />
+  <remove-project name="platform/external/protobuf" />
+  <project name="Oichkatzelesfrettschen/android_external_protobuf" path="external/protobuf" groups="pdk,sysui-studio" remote="gh" revision="lineage-22.2" />
+  <remove-project name="LineageOS/android_external_cronet" />
+  <project name="Oichkatzelesfrettschen/android_external_cronet" path="external/cronet" groups="pdk" remote="gh" revision="lineage-22.2" />
+  <remove-project name="LineageOS/android_system_keymaster" />
+  <project name="Oichkatzelesfrettschen/android_system_keymaster" path="system/keymaster" groups="pdk" remote="gh" revision="lineage-22.2" />
+  <remove-project name="LineageOS/android_hardware_interfaces" />
+  <project name="Oichkatzelesfrettschen/android_hardware_interfaces" path="hardware/interfaces" groups="pdk,sysui-studio" remote="gh" revision="lineage-22.2" />
+  <remove-project name="LineageOS/android_packages_services_BuiltInPrintService" />
+  <project name="Oichkatzelesfrettschen/android_packages_services_BuiltInPrintService" path="packages/services/BuiltInPrintService" groups="pdk-cw-fs,pdk-fs" remote="gh" revision="lineage-22.2" />
+  <remove-project name="platform/system/memory/lmkd" />
+  <project name="Oichkatzelesfrettschen/android_system_memory_lmkd" path="system/memory/lmkd" groups="pdk" remote="gh" revision="0dcb0e69a14f5f7a383223d28bbfdf250682b73d" upstream="lineage-22.2" />
+  <remove-project name="LineageOS/android_system_vold" />
+  <project name="Oichkatzelesfrettschen/android_system_vold" path="system/vold" groups="pdk" remote="gh" revision="lineage-22.2" />
+  <!-- LineageOS projects held at the revisions the tested builds compiled
+       (job 380, build 126); a LineageOS refresh moves them in its own change
+       with its own strict replay and acceptance. -->
+  <extend-project name="LineageOS/android_external_chromium-webview_patches" revision="b29edaec0c61bac615a30263b70cc965c2551ffd" upstream="main" />
+  <extend-project name="LineageOS/android_external_chromium-webview_prebuilt_arm" revision="9f672a0b29b66e75333f9e0984a60615724f0a20" upstream="main" />
+  <extend-project name="LineageOS/android_external_chromium-webview_prebuilt_arm64" revision="11fd8afe58c011d04cb3c1b2259f406ec9fd49f2" upstream="main" />
+  <extend-project name="LineageOS/android_external_chromium-webview_prebuilt_x86" revision="69d94d6d5c7e82dec3364bb5767db1fcabca0a07" upstream="main" />
+  <extend-project name="LineageOS/android_external_chromium-webview_prebuilt_x86_64" revision="d676fedf7ac7cdec6228f4e4173f753f1e906829" upstream="main" />
+  <extend-project name="LineageOS/charter" revision="8d37f70d3e032650fd89f8c087c7311ca9675c03" upstream="main" />
+  <extend-project name="LineageOS/contributors-cloud-generator" revision="b4f0e2854ae40961b1028744df3503ac39792cab" upstream="main" />
+  <extend-project name="LineageOS/cm_crowdin" revision="c0d37699ebfae41d78cac03a1b9f09ecccffca05" upstream="main" />
+  <extend-project name="LineageOS/hudson" revision="991dd7b314b24a758f7f647d57c01f6416a67060" upstream="main" />
+  <extend-project name="LineageOS/mirror" revision="bb3c5718f34b2cf3f411f41c8db6a7c00f33710e" upstream="main" />
+  <extend-project name="LineageOS/scripts" revision="793aed4809652d7cf059843b124872ecd2be80cd" upstream="main" />
+  <extend-project name="LineageOS/www" revision="cae5e9e3b212568716b865d7d532da72cb24c23b" upstream="main" />
+  <extend-project name="LineageOS/lineage_wiki" revision="596d333efddf9a3b7188caecee1c0a3a72cc3bb2" upstream="main" />
+  <extend-project name="LineageOS/android_packages_apps_AudioFX" revision="94275d69b285153ca58b1da1794a4fc7d67081b7" upstream="refs/heads/lineage-22.2" />
+  <extend-project name="LineageOS/android_packages_apps_DeskClock" revision="a07a4893db17eebe160a397e22391098de089f1d" upstream="refs/heads/lineage-22.2" />
+  <extend-project name="LineageOS/android_packages_apps_Etar" revision="9ef14ec75765c748962a297cc953f5000c2a85a9" upstream="refs/heads/lineage-22.2" />
+  <extend-project name="LineageOS/android_packages_apps_ExactCalculator" revision="be982943640cf105b87597c9992952d28944619e" upstream="refs/heads/lineage-22.2" />
+  <extend-project name="LineageOS/android_packages_apps_LineageParts" revision="12cb89713182619ac492746112dca29155be27db" upstream="refs/heads/lineage-22.2" />
+  <extend-project name="LineageOS/android_packages_apps_Updater" revision="bb7a985ab0f705bc8458022a5e2f71986856722d" upstream="refs/heads/lineage-22.2" />
+  <extend-project name="LineageOS/android_packages_modules_Bluetooth" revision="5b383edcebb4e7a991f15109b68c2f03355a7704" upstream="refs/heads/lineage-22.2" />
+  <extend-project name="LineageOS/android_packages_providers_DownloadProvider" revision="2e95c98b5141b52c84d0c8159a2c0ac3278a262b" upstream="refs/heads/lineage-22.2" />
+  <extend-project name="LineageOS/android_system_nfc" revision="eed435b6863ed15119257588981c99c23b0f27eb" upstream="refs/heads/lineage-22.2" />
+  <extend-project name="LineageOS/android_vendor_crowdin" revision="81d0f5ecb016d6aac9f5c3401fe8258a151c8d55" upstream="refs/heads/lineage-22.2" />
+  <extend-project name="LineageOS/android_vendor_qcom_opensource_fm-commonsys" revision="c8f239115f83d7799037b7dbb013f56c5c6ae6e5" upstream="refs/heads/lineage-22.2" />
+</manifest>

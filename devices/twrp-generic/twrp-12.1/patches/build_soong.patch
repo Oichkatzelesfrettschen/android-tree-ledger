@@ -1,0 +1,20 @@
+diff --git a/ui/build/sandbox_linux.go b/ui/build/sandbox_linux.go
+index dab0e75..7a52cc6 100644
+--- a/ui/build/sandbox_linux.go
++++ b/ui/build/sandbox_linux.go
+@@ -213,6 +213,15 @@ func (c *Cmd) wrapSandbox() {
+ 		sandboxArgs = append(sandboxArgs, "-N")
+ 	}
+ 
++	// ccache writes its results under its own cache_dir, which "-R /" maps
++	// read-only; a read-write bind keeps one cache across sandboxed compiles.
++	if ccacheExec := os.Getenv("CCACHE_EXEC"); ccacheExec != "" {
++		dir, err := exec.Command(ccacheExec, "-k", "cache_dir").Output()
++		if err == nil {
++			sandboxArgs = append(sandboxArgs, "-B", strings.TrimSpace(string(dir)))
++		}
++	}
++
+ 	// Stop nsjail from parsing arguments
+ 	sandboxArgs = append(sandboxArgs, "--")
+ 

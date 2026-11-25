@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- HTC Desire 510 (a11chl) on LineageOS 22.2, copied to
+       .repo/local_manifests/a11.xml of the shared M8 tree
+       ($HOME/Projects/Android/trees/m8/lineage-22.2) beside m8.xml. It
+       overrides no project of m8.xml or the default manifest, and the a11
+       product builds against the m8.xml platform forks and msm8974 CAF HALs.
+       Every project is pinned by SHA, with upstream naming the branch that
+       carries it. The vendor project checks out at vendor/htc-a11chl,
+       outside the vendor/htc project of the M8. A sync names only these
+       projects; a bare repo sync would re-check out the m8.xml projects the
+       M8 lanes hold on detached pins. -->
+  <remote name="oich" fetch="https://github.com/Oichkatzelesfrettschen" />
+
+  <project path="device/htc/a11" name="android_device_htc_a11" remote="oich"
+           revision="649492f06b6a978e487f633c5f5098b2b753318f" upstream="integration/a11-successor-5" />
+  <project path="device/htc/msm8226-common" name="android_device_htc_msm8226-common" remote="oich"
+           revision="2cf267830f09d13895eecbf530010b42e8f5bdd0" upstream="integration/a11-successor-5" />
+  <project path="vendor/htc-a11chl" name="proprietary_vendor_htc_a11chl" remote="oich"
+           revision="f269754fca4c1507b14258a581fd3ae4e71ede97" upstream="integration/a11-successor-5" />
+  <project path="kernel/htc/a11" name="android_kernel_htc_a11" remote="oich"
+           revision="c1ae63a806ea138dac12d7a76698cee3833d11e2" upstream="integration/a11-successor-5" clone-depth="1" />
+
+  <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" remote="github"
+           revision="3f56559a5436fd7be36fc6b7010ed3506ebe6e08" upstream="lineage-22.2" />
+  <project path="hardware/sony/timekeep" name="LineageOS/android_hardware_sony_timekeep" remote="github"
+           revision="5344c87a1e21dc09a70dd9ac5ce6f020003c0f43" upstream="lineage-22.2" />
+</manifest>

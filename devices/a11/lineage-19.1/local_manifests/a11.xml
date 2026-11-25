@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- HTC Desire 510 (a11chl) on LineageOS 19.1: copied into
+       .repo/local_manifests/ of an independent lineage-19.1 checkout
+       ($HOME/Projects/Android/trees/desire510-19.1); see
+       notes/LINEAGE_19_1_PORT_PLAN.md. Every fork project is pinned by SHA to
+       its merged head, with upstream naming the branch that carries it: the
+       kernel on lineage-18.1-kernel, the device trees and the 3.4 legacy
+       userspace set (system/bpf, system/netd, art, bionic, frameworks/av,
+       frameworks/base, hardware/ril, build/soong) on their lineage-19.1 or
+       AOSP base branches, and the msm8974 CAF HALs on
+       lineage-19.1-caf-msm8974. The display HAL, qcom-common and timekeep
+       carry no a11 change and are pinned to the verified tips of their
+       branches, so a sync cannot move a project under the build jobs' head
+       checks. -->
+  <remote name="oich" fetch="https://github.com/Oichkatzelesfrettschen" review="github.com/Oichkatzelesfrettschen" />
+
+  <remove-project name="LineageOS/android_build_soong" />
+  <project path="build/soong" name="android_build_soong" remote="oich"
+           revision="8310059358814b6a70f1c41b201497c5335792ed" upstream="lineage-19.1" groups="pdk,tradefed">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Linux 3.4 legacy userspace: LineageOS-UL commits on the current
+       LineageOS (or the manifest's AOSP r22) revision. -->
+  <remove-project name="platform/art" />
+  <project path="art" name="android_art" remote="oich" revision="72e0b9c32e2348fd89f45e4555c4dad2001a20d4" upstream="android-12.1.0_r22" groups="pdk" />
+  <remove-project name="LineageOS/android_bionic" />
+  <project path="bionic" name="android_bionic" remote="oich" revision="017d994214a45a5c71e670797e5a8fcd6e186850" upstream="lineage-19.1" groups="pdk" />
+  <remove-project name="LineageOS/android_frameworks_av" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="oich" revision="c1c7034e960f5ae8637364a42fdebd640e03d4c4" upstream="lineage-19.1" groups="pdk" />
+  <remove-project name="LineageOS/android_frameworks_base" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="oich" revision="687ef4d0c67f87bfad35686ee24dcf177c228759" upstream="lineage-19.1" groups="pdk-cw-fs,pdk-fs" />
+  <remove-project name="platform/system/bpf" />
+  <project path="system/bpf" name="android_system_bpf" remote="oich" revision="a6cee90339d714ec89a4e7529817661dff83629d" upstream="android-12.1.0_r22" groups="pdk" />
+  <remove-project name="LineageOS/android_system_netd" />
+  <project path="system/netd" name="android_system_netd" remote="oich" revision="f1234fb0d139d061be60cef497d22f544fdf48db" upstream="lineage-19.1" groups="pdk" />
+  <remove-project name="LineageOS/android_hardware_ril" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="oich" revision="b11643864a3d3368a62eeb21ab92be71649c26f9" upstream="lineage-19.1" groups="pdk" />
+
+  <project path="kernel/htc/a11" name="android_kernel_htc_a11" remote="oich"
+           revision="5ae85863f46618658cfb14d812623f3949788c2c" upstream="lineage-18.1-kernel" clone-depth="1" />
+
+  <project path="device/htc/a11" name="android_device_htc_a11" remote="oich" revision="f734050671fb88ed068145828e2c9cea88f4d7dc" upstream="lineage-19.1" />
+  <project path="device/htc/msm8226-common" name="android_device_htc_msm8226-common" remote="oich" revision="6a916c8b6027d2e3ee4b05dc9a6328227e89aef2" upstream="lineage-19.1" />
+  <project path="vendor/htc/a11chl" name="proprietary_vendor_htc_a11chl" remote="oich" revision="6a8f4349de1eff09a5045d5f922a74ea277bd54b" upstream="lineage-19.1" />
+
+  <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" remote="github"
+           revision="3f56559a5436fd7be36fc6b7010ed3506ebe6e08" upstream="lineage-19.1" />
+  <project path="hardware/sony/timekeep" name="LineageOS/android_hardware_sony_timekeep" remote="github"
+           revision="e0b2fbd9b8bd9ac7661fbf1cb5e6fc4fba922a55" upstream="lineage-19.1" />
+
+  <project path="hardware/qcom-caf/msm8974/audio" name="android_hardware_qcom_audio" remote="oich" revision="c95116ff339c8a6d492de2bcd0fafff607ae76ba" upstream="lineage-19.1-caf-msm8974" />
+  <project path="hardware/qcom-caf/msm8974/display" name="android_hardware_qcom_display" remote="oich"
+           revision="ae3213871c562e096fdc71a2c3cc0447312beff6" upstream="lineage-19.1-caf-msm8974" />
+  <project path="hardware/qcom-caf/msm8974/media" name="android_hardware_qcom_media" remote="oich" revision="fceddfe365e41ba2ef572c295978d59d75be382b" upstream="lineage-19.1-caf-msm8974" />
+</manifest>
