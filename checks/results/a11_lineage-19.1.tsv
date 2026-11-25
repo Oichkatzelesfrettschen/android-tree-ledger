@@ -1145,7 +1145,6 @@ PASS-tip	tools/test/graphicsbenchmark	https://android.googlesource.com/platform/
 PASS-tip	tools/test/connectivity	https://android.googlesource.com/platform/tools/test/connectivity	refs/tags/android-12.1.0_r22	a74e9d3afee07e92cc9f74345f91ea7cbe29d44d
 PASS-tip	tools/treble	https://android.googlesource.com/platform/tools/treble	refs/tags/android-12.1.0_r22	1b18efe53304a3c3d7112e91250b885ed5437a9e
 PASS-tip	tools/trebuchet	https://android.googlesource.com/platform/tools/trebuchet	refs/tags/android-12.1.0_r22	6d2c711220d72620090941cf14ac33037d402523
-PASS-tip	vendor/htc/a11chl	https://github.com/Oichkatzelesfrettschen/proprietary_vendor_htc_a11chl	refs/heads/lineage-19.1	6a8f4349de1eff09a5045d5f922a74ea277bd54b
 PASS-tip	toolchain/benchmark	https://android.googlesource.com/toolchain/benchmark	refs/tags/android-12.1.0_r22	8865b07dcd100bf8e90d4f24b9b44a93270ed047
 PASS-tip	external/llvm-project	https://android.googlesource.com/toolchain/llvm-project	refs/tags/android-12.1.0_r22	664b187160dc951c2cea3b69f92decf358d8e75a
 PASS-tip	tools/tradefederation/prebuilts	https://android.googlesource.com/platform/tools/tradefederation/prebuilts	refs/tags/android-12.1.0_r22	477f1e58308678cfca2559bf9af19be1c1e6da24

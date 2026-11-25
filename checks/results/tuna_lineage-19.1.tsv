@@ -275,7 +275,6 @@ PASS-tip	system/netd	https://github.com/Oichkatzelesfrettschen/android_system_ne
 PASS-tip	system/libhidl	https://github.com/Oichkatzelesfrettschen/android_system_libhidl	refs/heads/lineage-19.1-tuna	b8f786f64a283450a97c1cbbbed763ef03d402ae
 PASS-tip	system/sepolicy	https://github.com/Oichkatzelesfrettschen/android_system_sepolicy	refs/heads/lineage-19.1-tuna	25e9f16e7d36fe4babd1d5a346d59d72837b1d8a
 PASS-tip	vendor/lineage	https://github.com/Oichkatzelesfrettschen/android_vendor_lineage	refs/heads/lineage-19.1-tuna	ac88ea4ac7803e0695727312708b5bc7fda4e916
-PASS-tip	vendor/microg	https://github.com/Oichkatzelesfrettschen/android_vendor_microg	refs/heads/lineage-19.1	896d316340800b50d4b9816d677cf311115481dd
 PASS-tip	device/common	https://android.googlesource.com/device/common	refs/tags/android-12.1.0_r22	863f4b33ac0a905e4e25e53c8a279cad78357f58
 PASS-tip	device/generic/car	https://android.googlesource.com/device/generic/car	refs/tags/android-12.1.0_r22	77972e145485651286388d359ca708ba33b55e56
 PASS-tip	device/generic/armv7-a-neon	https://android.googlesource.com/device/generic/armv7-a-neon	refs/tags/android-12.1.0_r22	dd835701bc94e29c67fbf272880063058a800bf0
@@ -1079,7 +1078,6 @@ PASS-tip	system/libprocinfo	https://android.googlesource.com/platform/system/lib
 PASS-tip	system/libhwbinder	https://android.googlesource.com/platform/system/libhwbinder	refs/tags/android-12.1.0_r22	acfb7ba075d32c7ea8bf6c64a9d57870ef856ab6
 PASS-tip	system/libsysprop	https://android.googlesource.com/platform/system/libsysprop	refs/tags/android-12.1.0_r22	f79266f306f7696eb637b11554bb9c8e6cb97ad0
 PASS-tip	system/libvintf	https://android.googlesource.com/platform/system/libvintf	refs/tags/android-12.1.0_r22	4d36379cf332a903925d17ea718fa2f1289ab54f
-PASS-tip	system/memory/libion	https://github.com/Oichkatzelesfrettschen/android_system_memory_libion	refs/heads/dev/tuna/lineage-19.1	2375b45565a9d26e8a035e8e852cc5796fbb78c3
 PASS-tip	system/linkerconfig	https://android.googlesource.com/platform/system/linkerconfig	refs/tags/android-12.1.0_r22	c2872fa4275e06224164986525c0157c117773dc
 PASS-tip	system/memory/libdmabufheap	https://android.googlesource.com/platform/system/memory/libdmabufheap	refs/tags/android-12.1.0_r22	3c8def05890626ef2c3d3e390ece81b7f9140b3c
 PASS-tip	system/memory/libmemunreachable	https://android.googlesource.com/platform/system/memory/libmemunreachable	refs/tags/android-12.1.0_r22	53c0cb0f22e0149090e719f6a5db7793d7f04346
@@ -1134,8 +1132,6 @@ PASS-tip	tools/metalava	https://android.googlesource.com/platform/tools/metalava
 PASS-tip	tools/test/connectivity	https://android.googlesource.com/platform/tools/test/connectivity	refs/tags/android-12.1.0_r22	a74e9d3afee07e92cc9f74345f91ea7cbe29d44d
 PASS-tip	tools/tradefederation/prebuilts	https://android.googlesource.com/platform/tools/tradefederation/prebuilts	refs/tags/android-12.1.0_r22	477f1e58308678cfca2559bf9af19be1c1e6da24
 PASS-tip	tools/treble	https://android.googlesource.com/platform/tools/treble	refs/tags/android-12.1.0_r22	1b18efe53304a3c3d7112e91250b885ed5437a9e
-PASS-tip	vendor/samsung	https://github.com/Oichkatzelesfrettschen/proprietary_vendor_samsung	refs/heads/lineage-18.1	0d5f69f430a292ff710b25eeec33ec1ea5a98dd1
-PASS-tip	vendor/ti	https://github.com/Oichkatzelesfrettschen/proprietary_vendor_ti	refs/heads/stable	ca92041c1501bee1c34e76726960979645f7772c
 PASS-tip	tools/trebuchet	https://android.googlesource.com/platform/tools/trebuchet	refs/tags/android-12.1.0_r22	6d2c711220d72620090941cf14ac33037d402523
 PASS-tip	toolchain/benchmark	https://android.googlesource.com/toolchain/benchmark	refs/tags/android-12.1.0_r22	8865b07dcd100bf8e90d4f24b9b44a93270ed047
 PASS-tip	external/llvm-project	https://android.googlesource.com/toolchain/llvm-project	refs/tags/android-12.1.0_r22	664b187160dc951c2cea3b69f92decf358d8e75a

@@ -317,7 +317,6 @@ PASS-tip	device/qcom/sepolicy-legacy	https://github.com/Ultra-Legacy-Hippeastrum
 PASS-tip	hardware/ril	https://github.com/Ultra-Legacy-Hippeastrum/android_hardware_ril	refs/heads/lineage-22.2	9292e343038a998ffa9917caf9d69a21f1a8aaf5
 PASS-tip	kernel/htc/a11	https://github.com/Oichkatzelesfrettschen/android_kernel_htc_a11	refs/heads/integration/a11-successor-5	c1ae63a806ea138dac12d7a76698cee3833d11e2
 PASS-compare	kernel/htc/msm8974	https://github.com/Oichkatzelesfrettschen/android_kernel_htc_msm8974	refs/heads/lineage-22.2	ad2706f03460142ff89d02b2f9ea217f2547e903
-PASS-tip	vendor/htc	https://github.com/Oichkatzelesfrettschen/proprietary_vendor_htc_m8	refs/heads/lineage-22.2	b66591f3ca9ebbdd12489a224b31dd506035eaef
 PASS-tip	system/libhidl	https://github.com/Ultra-Legacy-Hippeastrum/android_system_libhidl	refs/heads/lineage-22.2	827df939d5ceb106d4d8b9f4dc70508a3f5c4ca4
 PASS-tip	system/libhwbinder	https://github.com/Ultra-Legacy-Hippeastrum/android_system_libhwbinder	refs/heads/lineage-22.2	18fd5d0e8611d9e77929efa3b299029d2f0f3415
 PASS-tip	device/generic/arm64	https://android.googlesource.com/device/generic/arm64	refs/tags/android-15.0.0_r32	71380158d818de918338e34a9cb72316fe3cfa4e
@@ -1125,7 +1124,6 @@ PASS-tip	tools/metalava	https://android.googlesource.com/platform/tools/metalava
 PASS-tip	tools/test/mobly_snippets	https://android.googlesource.com/platform/tools/test/mobly_snippets	refs/tags/android-15.0.0_r32	cd87a9cf11be58c4fc17af8d0ab14281c46c14ed
 PASS-tip	tools/test/openhst	https://android.googlesource.com/platform/tools/test/openhst	refs/tags/android-15.0.0_r32	1b5ad3e9ba5b82967bb9bfd2e63efc075ef3df75
 PASS-tip	tools/test/connectivity	https://android.googlesource.com/platform/tools/test/connectivity	refs/tags/android-15.0.0_r32	39aced9369bd8a4d75e6cf388b988878dc2dd206
-PASS-tip	vendor/htc-a11chl	https://github.com/Oichkatzelesfrettschen/proprietary_vendor_htc_a11chl	refs/heads/integration/a11-successor-5	f269754fca4c1507b14258a581fd3ae4e71ede97
 PASS-tip	tools/tradefederation/contrib	https://android.googlesource.com/platform/tools/tradefederation/contrib	refs/tags/android-15.0.0_r32	8b386a7e64b96ec973a46d25791506f20309871a
 PASS-tip	tools/trebuchet	https://android.googlesource.com/platform/tools/trebuchet	refs/tags/android-15.0.0_r32	56b170dbe6574b1f0ec9db7a63de7238ca6a09ea
 PASS-tip	tools/treble	https://android.googlesource.com/platform/tools/treble	refs/tags/android-15.0.0_r32	105f628577ac4ba0e277a494fbb614ed8c12a994
