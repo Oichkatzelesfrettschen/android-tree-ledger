@@ -306,7 +306,6 @@ PASS-tip	vendor/lineage	https://github.com/Oichkatzelesfrettschen/android_vendor
 PASS-tip	system/libhidl	https://github.com/Oichkatzelesfrettschen/android_system_libhidl	refs/heads/dev/tuna/lineage-18.1	988e15d4eb118d4d75ebfc5d4467488d3493adc3
 PASS-compare	external/skia	https://github.com/Oichkatzelesfrettschen/android_external_skia	refs/heads/lineage-18.1-tuna	246118bdf77aa7713793e729dada73ec7076dac0
 PASS-compare	hardware/ti/omap4	https://github.com/Oichkatzelesfrettschen/android_hardware_ti_omap4	refs/heads/lineage-18.1	e1784886ac0edc8e023299cd895d7cb1f416ca5c
-PASS-tip	vendor/microg	https://github.com/Oichkatzelesfrettschen/android_vendor_microg	refs/heads/lineage-18.1	621758c7687491ed78e560f24dd4b50e8b7863f1
 PASS-compare	system/netd	https://github.com/Oichkatzelesfrettschen/android_system_netd	refs/heads/lineage-18.1-tuna	c013516ff3b78598cbab7e1d0b86583732273b8f
 PASS-tip	device/common	https://android.googlesource.com/device/common	refs/tags/android-11.0.0_r46	6b398d7f47aae5d42d126c49f0879fa20d2ca93b
 PASS-compare	kernel/samsung/tuna	https://github.com/Oichkatzelesfrettschen/android_kernel_samsung_tuna	refs/heads/feature/tuna-clang-thinlto-kbuild	41698934f1d4d85f14d5c7fa21d11ea2064bde14
@@ -860,11 +859,9 @@ PASS-tip	tools/loganalysis	https://android.googlesource.com/platform/tools/logan
 PASS-tip	tools/test/graphicsbenchmark	https://android.googlesource.com/platform/tools/test/graphicsbenchmark	refs/tags/android-11.0.0_r46	7c31a9c1f32d602e1b50446951088d3beddedb84
 PASS-tip	tools/test/connectivity	https://android.googlesource.com/platform/tools/test/connectivity	refs/tags/android-11.0.0_r46	38ccb70b61038b0be21da87ae626b01a3d162bf8
 PASS-tip	tools/tradefederation/contrib	https://android.googlesource.com/platform/tools/tradefederation/contrib	refs/tags/android-11.0.0_r46	0ff7007d58dd912f7d5dca4178a9731494b31222
-PASS-tip	vendor/ti	https://github.com/Oichkatzelesfrettschen/proprietary_vendor_ti	refs/heads/dev/tuna/lineage-18.1	fd79492f508b981e818029ca57a4c2daac2ef078
 PASS-tip	tools/treble	https://android.googlesource.com/platform/tools/treble	refs/tags/android-11.0.0_r46	4a70b7b8a10119fe886bb009c634646a533f7db0
 PASS-tip	tools/tradefederation/core	https://android.googlesource.com/platform/tools/tradefederation	refs/tags/android-11.0.0_r46	f5410b0a4c7ff2430b2dc2ea5a8718eb72e8bb7d
 PASS-tip	tools/trebuchet	https://android.googlesource.com/platform/tools/trebuchet	refs/tags/android-11.0.0_r46	b735f448e61c99f4c06101902ff76eee4e5496f1
 PASS-tip	toolchain/benchmark	https://android.googlesource.com/toolchain/benchmark	refs/tags/android-11.0.0_r46	1fba1825631e6e52dff5b3ceb87a5b439e2acf52
 PASS-tip	tools/platform-compat	https://android.googlesource.com/tools/platform-compat	refs/tags/android-11.0.0_r46	b553fea7dd2aa8dcc26f4d8f91effd86e55dd72e
 PASS-tip	toolchain/pgo-profiles	https://android.googlesource.com/toolchain/pgo-profiles	refs/tags/android-11.0.0_r46	df7cd88e8839bdf864700fc7d302b678a604b943
-FAIL-not-ancestor	vendor/samsung	https://github.com/Oichkatzelesfrettschen/proprietary_vendor_samsung	refs/heads/lineage-18.1	a421a47fc343e0ee56a26fa5be996feb7b3f28a8

@@ -833,7 +833,6 @@ PASS-tip	tools/security	https://android.googlesource.com/platform/tools/security
 PASS-tip	tools/test/graphicsbenchmark	https://android.googlesource.com/platform/tools/test/graphicsbenchmark	refs/tags/android-11.0.0_r46	7c31a9c1f32d602e1b50446951088d3beddedb84
 PASS-tip	tools/test/connectivity	https://android.googlesource.com/platform/tools/test/connectivity	refs/tags/android-11.0.0_r46	38ccb70b61038b0be21da87ae626b01a3d162bf8
 PASS-tip	tools/tradefederation/contrib	https://android.googlesource.com/platform/tools/tradefederation/contrib	refs/tags/android-11.0.0_r46	0ff7007d58dd912f7d5dca4178a9731494b31222
-PASS-tip	vendor/htc/a11chl	https://github.com/Oichkatzelesfrettschen/proprietary_vendor_htc_a11chl	refs/heads/lineage-18.1	6a8f4349de1eff09a5045d5f922a74ea277bd54b
 PASS-tip	tools/treble	https://android.googlesource.com/platform/tools/treble	refs/tags/android-11.0.0_r46	4a70b7b8a10119fe886bb009c634646a533f7db0
 PASS-tip	tools/trebuchet	https://android.googlesource.com/platform/tools/trebuchet	refs/tags/android-11.0.0_r46	b735f448e61c99f4c06101902ff76eee4e5496f1
 PASS-tip	tools/tradefederation/core	https://android.googlesource.com/platform/tools/tradefederation	refs/tags/android-11.0.0_r46	f5410b0a4c7ff2430b2dc2ea5a8718eb72e8bb7d

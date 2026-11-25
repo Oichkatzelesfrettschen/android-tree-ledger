@@ -44,7 +44,6 @@
 
   <project path="device/htc/a11" name="android_device_htc_a11" remote="oich" revision="f734050671fb88ed068145828e2c9cea88f4d7dc" upstream="lineage-19.1" />
   <project path="device/htc/msm8226-common" name="android_device_htc_msm8226-common" remote="oich" revision="6a916c8b6027d2e3ee4b05dc9a6328227e89aef2" upstream="lineage-19.1" />
-  <project path="vendor/htc/a11chl" name="proprietary_vendor_htc_a11chl" remote="oich" revision="6a8f4349de1eff09a5045d5f922a74ea277bd54b" upstream="lineage-19.1" />
 
   <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" remote="github"
            revision="3f56559a5436fd7be36fc6b7010ed3506ebe6e08" upstream="lineage-19.1" />

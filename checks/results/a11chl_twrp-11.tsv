@@ -23,7 +23,6 @@ PASS-tip	external/bouncycastle	https://github.com/TeamWin/external_bouncycastle	
 PASS-tip	external/magisk-prebuilt	https://github.com/TeamWin/external_magisk-prebuilt	refs/heads/android-11	c14d5c054bac710dfd9c3ed99d70c1e89fc24cfe
 PASS-tip	vendor/twrp	https://github.com/TeamWin/android_vendor_twrp	refs/heads/android-11	8024590e5404e7811dafab7219034bd44038f064
 PASS-tip	external/lptools	https://github.com/phhusson/vendor_lptools	refs/heads/master	c8be7de57b80eab61a6f94ec86464a01fb9056f2
-PASS-compare-noref	device/htc/a11chl	https://github.com/Oichkatzelesfrettschen/android_device_htc_a11chl	refs/heads/twrp-35-port-attrfix	0d25f478a4652814f5a0816169ff7853e64110b3
 PASS-tip	kernel/prebuilts/4.19/arm64	https://android.googlesource.com/kernel/prebuilts/4.19/arm64	refs/tags/android-11.0.0_r29	332808127a212d39ef607a3241fe0ff1d48cd795
 PASS-tip	kernel/configs	https://android.googlesource.com/kernel/configs	refs/tags/android-11.0.0_r29	977db6e6ab15a16466092963cac6469eb4c0787e
 PASS-tip	compatibility/cdd	https://android.googlesource.com/platform/compatibility/cdd	refs/tags/android-11.0.0_r29	635b28e4cb6978878fb99a1b2fa11ac861149e0a
