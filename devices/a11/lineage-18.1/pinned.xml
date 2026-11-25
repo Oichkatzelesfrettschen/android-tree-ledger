@@ -901,7 +901,6 @@
   <project name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" remote="aosp" revision="0ff7007d58dd912f7d5dca4178a9731494b31222" upstream="refs/tags/android-11.0.0_r46" dest-branch="refs/tags/android-11.0.0_r46" groups="pdk,tradefed" />
   <project name="platform/tools/treble" path="tools/treble" remote="aosp" revision="4a70b7b8a10119fe886bb009c634646a533f7db0" upstream="refs/tags/android-11.0.0_r46" dest-branch="refs/tags/android-11.0.0_r46" groups="pdk,tools" />
   <project name="platform/tools/trebuchet" path="tools/trebuchet" remote="aosp" revision="b735f448e61c99f4c06101902ff76eee4e5496f1" upstream="refs/tags/android-11.0.0_r46" dest-branch="refs/tags/android-11.0.0_r46" groups="cts,pdk,pdk-cw-fs,pdk-fs,tools" />
-  <project name="proprietary_vendor_htc_a11chl" path="vendor/htc/a11chl" remote="oich" revision="6a8f4349de1eff09a5045d5f922a74ea277bd54b" upstream="lineage-18.1" groups="local::a11" />
   <project name="toolchain/benchmark" remote="aosp" revision="1fba1825631e6e52dff5b3ceb87a5b439e2acf52" upstream="refs/tags/android-11.0.0_r46" dest-branch="refs/tags/android-11.0.0_r46" />
   <project name="toolchain/pgo-profiles" remote="aosp" revision="df7cd88e8839bdf864700fc7d302b678a604b943" upstream="refs/tags/android-11.0.0_r46" dest-branch="refs/tags/android-11.0.0_r46" groups="pdk" />
   <project name="tools/platform-compat" remote="aosp" revision="b553fea7dd2aa8dcc26f4d8f91effd86e55dd72e" upstream="refs/tags/android-11.0.0_r46" dest-branch="refs/tags/android-11.0.0_r46" groups="pdk,pdk-cw-fs,pdk-fs" />

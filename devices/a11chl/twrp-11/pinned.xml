@@ -5,9 +5,7 @@
   <remote name="TeamWin" fetch="https://github.com/TeamWin" review="https://gerrit.twrp.me" />
   <remote name="aosp" fetch="https://android.googlesource.com" review="https://android-review.googlesource.com/" />
   <remote name="github" fetch="https://github.com" />
-  <remote name="ohk-gh" fetch="https://github.com/" />
   <default remote="aosp" revision="refs/tags/android-11.0.0_r29" sync-j="4" />
-  <project name="Oichkatzelesfrettschen/android_device_htc_a11chl" path="device/htc/a11chl" remote="ohk-gh" revision="0d25f478a4652814f5a0816169ff7853e64110b3" groups="local::a11chl" />
   <project name="android_bootable_recovery" path="bootable/recovery" remote="TeamWin" revision="8bd48201c3ed825a0acecc0e6dcf125449ab1ec2" upstream="android-11" dest-branch="android-11" />
   <project name="android_build" path="build/make" remote="TeamWin" revision="95d3dcb0dd66f3e55a15e13037f92b8ee32bdb4b" upstream="android-11" dest-branch="android-11" groups="pdk">
     <copyfile src="core/root.mk" dest="Makefile" />

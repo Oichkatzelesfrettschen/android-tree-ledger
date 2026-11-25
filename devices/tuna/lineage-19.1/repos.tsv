@@ -7,5 +7,3 @@ tuna/lineage-19.1	frameworks/base	codex/tuna19-camera-bitmap-integration	Oichkat
 tuna/lineage-19.1	frameworks/base	fix/tuna19-camera-session-lifecycle	Oichkatzelesfrettschen/android_frameworks_base	topic/tuna/lineage-19.1/fix/tuna19-camera-session-lifecycle	9bba153ce86b41468601c41c5c71750638bf8bf3	ls-remote tip
 tuna/lineage-19.1	hardware/interfaces	HEAD	Oichkatzelesfrettschen/android_hardware_interfaces	dev/tuna/lineage-19.1	ae469cee0dce6d71489588126a15da8e67a50102	ls-remote tip
 tuna/lineage-19.1	hardware/ti/omap4	HEAD	Oichkatzelesfrettschen/android_hardware_ti_omap4	dev/tuna/lineage-19.1	9568242dd0b049e8263996ea484e5db2e0de5d83	ls-remote tip
-tuna/lineage-19.1	system/memory/libion	HEAD	Oichkatzelesfrettschen/android_system_memory_libion	dev/tuna/lineage-19.1	2375b45565a9d26e8a035e8e852cc5796fbb78c3	ls-remote tip
-tuna/lineage-19.1	system/memory/libion	codex/tuna19-libion-map-rollback	Oichkatzelesfrettschen/android_system_memory_libion	topic/tuna/lineage-19.1/codex/tuna19-libion-map-rollback	869a78b4dba72b60883d2d2e423b60fa0babbd82	ls-remote tip
