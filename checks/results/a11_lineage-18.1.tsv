@@ -268,7 +268,7 @@ PASS-compare	lineage/charter	https://github.com/LineageOS/charter	refs/heads/mai
 PASS-compare	lineage/crowdin	https://github.com/LineageOS/cm_crowdin	refs/heads/main	ad586f0d49b2c50ce4320e18217c3cac499df1ed
 PASS-tip	device/htc/a11	https://github.com/Oichkatzelesfrettschen/android_device_htc_a11	refs/heads/lineage-18.1	59bc2cc343ca26eea498a43b0ac08573f4fe4a0f
 PASS-compare	lineage/mirror	https://github.com/LineageOS/mirror	refs/heads/main	65d5ac4c833cf5f457eade618d5b601e2f3f220f
-PASS-tip	device/htc/msm8226-common	https://github.com/Oichkatzelesfrettschen/android_device_htc_msm8226-common	refs/heads/lineage-18.1	c3d68e97479add42989dfc9afc98a5f1adbe1090
+PASS-tip	device/htc/msm8226-common	https://github.com/Oichkatzelesfrettschen/android_device_htc_msm8226-common	refs/heads/lineage-18.1	bf4dd43c78a4c3d5de5c005e21425632651455b5
 PASS-compare	lineage/hudson	https://github.com/LineageOS/hudson	refs/heads/main	6776a52b1e5f2abfd88e4b8a8bd214af857080c9
 PASS-tip	device/samsung/qcom-common	https://github.com/LineageOS/android_device_samsung_qcom-common	refs/heads/lineage-18.1	3f56559a5436fd7be36fc6b7010ed3506ebe6e08
 PASS-compare	lineage/website	https://github.com/LineageOS/www	refs/heads/main	cae5e9e3b212568716b865d7d532da72cb24c23b

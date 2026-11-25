@@ -8,7 +8,7 @@
   
   <default remote="aosp" revision="refs/tags/android-14.0.0_r67" sync-j="4"/>
   
-  <project name="Oichkatzelesfrettschen/android_bootable_recovery-m8-twrp" path="bootable/recovery" remote="gh" revision="4188cdb74c2f7d5de769b69b7cca8a10f5572867" groups="local::htc_m8"/>
+  <project name="Oichkatzelesfrettschen/android_bootable_recovery-m8-twrp" path="bootable/recovery" remote="gh" revision="af1b6f505b6e9d8148b632a708842987015d7e45" groups="local::htc_m8"/>
   <project name="Oichkatzelesfrettschen/android_device_htc_m8-twrp" path="device/htc/m8" remote="gh" revision="2806c7425e4183b22ac292481fa17cb265560098" groups="local::htc_m8"/>
   <project name="Oichkatzelesfrettschen/android_system_core-m8-twrp" path="system/core" remote="gh" revision="f28530e38bbcd51578870639935e0b6eb041bdf6" groups="local::htc_m8"/>
   <project name="android_build" path="build/make" remote="TeamWin" revision="506df226dd003a364916b6b3ee1eb3bf9064f97f" upstream="android-14.1" dest-branch="android-14.1" groups="pdk">

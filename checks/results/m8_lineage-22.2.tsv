@@ -289,12 +289,12 @@ PASS-compare	lineage/wiki	https://github.com/LineageOS/lineage_wiki	refs/heads/m
 PASS-tip	external/icu	https://github.com/Oichkatzelesfrettschen/android_external_icu	refs/heads/lineage-22.2	2b2089d468c205de6a2c9f5d94957d8bb68da05a
 PASS-tip	external/libnfc-nxp	https://github.com/Oichkatzelesfrettschen/android_external_libnfc-nxp	refs/heads/lineage-22.2	88c71ecf240f4e45b941a1cd15c8a5f5cfd7a5ac
 PASS-tip	external/tensorflow	https://github.com/Oichkatzelesfrettschen/android_external_tensorflow	refs/heads/lineage-22.2	fcd6eaaf41e987cca410fe22e623e1e8017e0cff
-PASS-tip	frameworks/av	https://github.com/Oichkatzelesfrettschen/android_frameworks_av	refs/heads/dev/m8/lineage-22.2	c6a45c043b113da59a56f58dc97b86bc6f5a2422
+PASS-tip	frameworks/av	https://github.com/Oichkatzelesfrettschen/android_frameworks_av	refs/heads/dev/m8/lineage-22.2	d8d0dd1220817d1318876707527f747c1c07aef9
 PASS-tip	external/perfetto	https://github.com/Oichkatzelesfrettschen/android_external_perfetto	refs/heads/lineage-22.2	7d963b258cae97c82773e7eafcf7e46ccd04321d
 PASS-tip	frameworks/base	https://github.com/Oichkatzelesfrettschen/android_frameworks_base	refs/heads/dev/m8/lineage-22.2	09fab5c2f4a7e450a142c149140ce2a7ab4f015a
 PASS-tip	external/protobuf	https://github.com/Oichkatzelesfrettschen/android_external_protobuf	refs/heads/lineage-22.2	41387ee72be8ea6cec692d968a2f6850f5101c0f
 PASS-tip	frameworks/native	https://github.com/Oichkatzelesfrettschen/android_frameworks_native	refs/heads/dev/m8/lineage-22.2	71f3f76d187e94e96fae15013ae70069c7cfb513
-PASS-tip	hardware/interfaces	https://github.com/Oichkatzelesfrettschen/android_hardware_interfaces	refs/heads/lineage-22.2	c82b36f3497f3ce37b54bbbb5304280739977700
+PASS-tip	hardware/interfaces	https://github.com/Oichkatzelesfrettschen/android_hardware_interfaces	refs/heads/lineage-22.2	f2e3107ab24d44821e7ba31d9a8ffdbf50e3171e
 PASS-tip	hardware/lineage/interfaces	https://github.com/Oichkatzelesfrettschen/android_hardware_lineage_interfaces	refs/heads/lineage-22.2	6d0f53225d2bbb151ef4bd0fc85adbdc573867cd
 PASS-tip	hardware/qcom-caf/common	https://github.com/Oichkatzelesfrettschen/android_hardware_qcom-caf_common	refs/heads/lineage-22.2	7dbb91aa3ae68250806e3232ec5632b6e661508d
 PASS-tip	hardware/qcom-caf/msm8974/audio	https://github.com/Oichkatzelesfrettschen/android_hardware_qcom_audio	refs/heads/lineage-22.2-caf-msm8974	685bc9027faa660282fcacc72ec792797136a77a
@@ -311,7 +311,7 @@ PASS-tip	system/core	https://github.com/Oichkatzelesfrettschen/android_system_co
 PASS-tip	system/tools/hidl	https://github.com/Oichkatzelesfrettschen/android_system_tools_hidl	refs/heads/lineage-22.2	119d31b8484f5cecbecf5a36bb63cf84d97ff88a
 PASS-tip	system/vold	https://github.com/Oichkatzelesfrettschen/android_system_vold	refs/heads/lineage-22.2	42dba79c8bc4f5e450800fe5dbcc842a786dde5d
 PASS-tip	device/htc/a11	https://github.com/Oichkatzelesfrettschen/android_device_htc_a11	refs/heads/integration/a11-successor-5	649492f06b6a978e487f633c5f5098b2b753318f
-PASS-tip	device/htc/msm8226-common	https://github.com/Oichkatzelesfrettschen/android_device_htc_msm8226-common	refs/heads/dev/m8/lineage-22.2	2cf267830f09d13895eecbf530010b42e8f5bdd0
+PASS-tip	device/htc/msm8226-common	https://github.com/Oichkatzelesfrettschen/android_device_htc_msm8226-common	refs/heads/dev/m8/lineage-22.2	523108df0205fa3403e3c45c8683b5bf7345c744
 PASS-tip	external/jemalloc_new	https://github.com/Ultra-Legacy-Hippeastrum/android_external_jemalloc_new	refs/heads/lineage-22.2	44abb6e982350b9672f3eaa1abfc74a677fe069b
 PASS-tip	device/qcom/sepolicy-legacy	https://github.com/Ultra-Legacy-Hippeastrum/android_device_qcom_sepolicy	refs/heads/lineage-22.2-legacy	b1fcf636ddcc1d80dd8a9fba04925524cba046d5
 PASS-tip	hardware/ril	https://github.com/Ultra-Legacy-Hippeastrum/android_hardware_ril	refs/heads/lineage-22.2	9292e343038a998ffa9917caf9d69a21f1a8aaf5

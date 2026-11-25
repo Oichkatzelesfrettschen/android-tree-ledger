@@ -75,7 +75,7 @@
            upstream="lineage-18.1-kernel" clone-depth="1" />
 
   <project path="device/htc/msm8226-common" name="android_device_htc_msm8226-common"
-           remote="oich" revision="c3d68e97479add42989dfc9afc98a5f1adbe1090"
+           remote="oich" revision="bf4dd43c78a4c3d5de5c005e21425632651455b5"
            upstream="lineage-18.1" />
 
   <project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common"

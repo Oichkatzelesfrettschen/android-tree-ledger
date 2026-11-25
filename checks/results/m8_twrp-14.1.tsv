@@ -1,4 +1,4 @@
-PASS-tip	bootable/recovery	https://github.com/Oichkatzelesfrettschen/android_bootable_recovery-m8-twrp	refs/heads/dev/m8/twrp-14.1	caeb2b74f74f651d095033cff54f7b4803a637e1
+PASS-tip	bootable/recovery	https://github.com/Oichkatzelesfrettschen/android_bootable_recovery-m8-twrp	refs/heads/dev/m8/twrp-14.1	596f3de221d39579cea81567b71b6edb14d3c1d5
 FAIL-ref-absent	device/htc/m8	https://github.com/Oichkatzelesfrettschen/android_device_htc_m8-twrp	refs/heads/2806c7425e4183b22ac292481fa17cb265560098	902424abf8910fca85daa8c40412ecad40d37d8d
 PASS-tip	cts	https://github.com/TeamWin/android_cts	refs/heads/android-14.1	06e31e2f4ace8e0a112b15366545438e29f906b6
 PASS-tip	device/qcom/common	https://github.com/TeamWin/android_device_qcom_common	refs/heads/android-12.1	2cf934339972feb6f711e5ad182b82157269c7f3
