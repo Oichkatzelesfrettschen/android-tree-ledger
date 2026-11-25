@@ -1,2 +1,2 @@
 source_tree	path	source_ref	owner_repository	pushed_ref	sha	verified
-standalone	bullhead/device_lge_bullhead	HEAD	Oichkatzelesfrettschen/android_device_lge_bullhead	dev/bullhead/lineage-22.2	5fbaea520b210a9689f3e5b0256be080db9442a8	ls-remote tip
+standalone	bullhead/device_lge_bullhead	HEAD	Oichkatzelesfrettschen/android_device_lge_bullhead	dev/bullhead/lineage-22.2	98303d90aab60cedea2015af4497351b9e603488	ls-remote tip
