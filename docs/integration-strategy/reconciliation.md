@@ -26,3 +26,5 @@ Consequences for the strategy, before the Advisor's integration:
 - Every push goes under a new namespace, so no existing fork branch moves, and retirement safety rests on exact `ls-remote --heads` tip equality of the pushed names, not on containment.
 - TWRP recovery work needs a home in the omnirom/TeamWin network.
 - Device names follow products (m8, a11, a11chl, tuna, bullhead), and tracks follow the upstream branch (lineage-18.1, twrp-14.1).
+
+The agy report cited above now lives in android-tree-ledger-private under docs/integration-strategy/reports/, because it names private repositories.
