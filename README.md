@@ -16,6 +16,7 @@ This repository records how to recreate nine retired Android source trees from G
 |---|---|---|
 | devices/m8/lineage-22.2 | m8/lineage-22.2 | m8, a11 |
 | devices/bullhead/lineage-22.2 | bullhead/lineage-22.2 | bullhead |
+| devices/tuna/lineage-22.2 | tuna/lineage-22.2 | maguro, toro (tuna) |
 | devices/tuna/lineage-18.1 | tuna/lineage-18.1 | maguro, toro (tuna) |
 | devices/tuna/lineage-19.1 | tuna/lineage-19.1 | maguro, toro (tuna) |
 | devices/a11/lineage-18.1 | desire510-18.1 | a11 (HTC Desire 510) |
@@ -53,6 +54,10 @@ Pins of repositories that are not public live in the private repository `android
 - `dev/<device>/<track>`: the built HEAD of one project in one tree.
 - `topic/<device>/<track>/<original-branch>`: every other local branch, under its original name.
 - No existing branch was moved. Three open pull requests were merged into lineage-22.2 on the owner's instruction: android_device_lge_bullhead #1, android_kernel_htc_a11 #71, android_kernel_htc_msm8974 #2.
+
+## tuna on LineageOS 22.2
+
+`devices/tuna/lineage-22.2/pinned.xml` takes the platform forks of `devices/m8/lineage-22.2` (the proven 32-bit set: `art`, `build/soong`, `bionic`, `system/core`, `system/netd`, `system/sepolicy`, the legacy RIL and HIDL forks) and replaces the m8, a11 and msm8974 device, kernel and HAL projects with the tuna ones. `device/samsung/tuna`, `device/samsung/maguro` and `hardware/ti/omap4` pin the heads of `dev/tuna/lineage-22.2`; `frameworks/native` pins the shared GLES RenderEngine selector topic and `hardware/interfaces` the HWC1 client-target topic. `kernel/samsung/tuna` keeps the 19.1 pin until the kernel base is chosen. The `vendor/ti` and `vendor/samsung` blob projects are private repositories; their overlay entry for this track is not yet written in the private ledger. `frameworks/av` and `frameworks/base` keep the m8 pins; the tuna camera lifecycle commits are not yet re-derived onto them.
 
 ## Next: everything on LineageOS 22.2
 
