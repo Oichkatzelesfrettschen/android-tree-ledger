@@ -1195,7 +1195,7 @@
   <project name="trusty/vendor/google/aosp" remote="aosp" revision="02deab114b76b93c3f9ac6bb2b2abc1949808a57" upstream="refs/tags/android-15.0.0_r32" dest-branch="refs/tags/android-15.0.0_r32" groups="pdk,trusty">
     <copyfile src="lk_inc.mk" dest="lk_inc.mk" />
   </project>
-  <project name="android_device_samsung_tuna" path="device/samsung/tuna" remote="oich-ledger" revision="069dd051f8f34f61029c5c3fb67bbf80b71ca4dd" upstream="refs/heads/dev/tuna/lineage-22.2" groups="local::tuna" />
+  <project name="android_device_samsung_tuna" path="device/samsung/tuna" remote="oich-ledger" revision="afc2bc477b54c058c71ce49d4ebd4476afd12eff" upstream="refs/heads/dev/tuna/lineage-22.2" groups="local::tuna" />
   <project name="android_device_samsung_maguro" path="device/samsung/maguro" remote="oich-ledger" revision="fa9ff4b31bdc1e8ef7d5c758d0daf6382870c2c4" upstream="refs/heads/dev/tuna/lineage-22.2" groups="local::tuna" />
   <project name="android_hardware_ti_omap4" path="hardware/ti/omap4" remote="oich-ledger" revision="090f7e62f0c7cb216d9ad082aa439bfe51113d25" upstream="refs/heads/dev/tuna/lineage-22.2" groups="local::tuna" />
   <project name="android_external_jhead" path="external/jhead" remote="oich" revision="27ecb75f03f8a6c1b1a2f2ff240e918d2cb78754" upstream="lineage-18.1" groups="local::tuna" />

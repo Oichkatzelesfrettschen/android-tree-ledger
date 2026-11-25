@@ -1,5 +1,5 @@
 source_tree	path	source_ref	owner_repository	pushed_ref	sha	verified
-tuna/lineage-22.2	device/samsung/tuna	HEAD	Oichkatzelesfrettschen/android_device_samsung_tuna	dev/tuna/lineage-22.2	069dd051f8f34f61029c5c3fb67bbf80b71ca4dd	ls-remote tip
+tuna/lineage-22.2	device/samsung/tuna	HEAD	Oichkatzelesfrettschen/android_device_samsung_tuna	dev/tuna/lineage-22.2	afc2bc477b54c058c71ce49d4ebd4476afd12eff	ls-remote tip
 tuna/lineage-22.2	device/samsung/maguro	HEAD	Oichkatzelesfrettschen/android_device_samsung_maguro	dev/tuna/lineage-22.2	fa9ff4b31bdc1e8ef7d5c758d0daf6382870c2c4	ls-remote tip
 tuna/lineage-22.2	hardware/ti/omap4	HEAD	Oichkatzelesfrettschen/android_hardware_ti_omap4	dev/tuna/lineage-22.2	090f7e62f0c7cb216d9ad082aa439bfe51113d25	ls-remote tip
 tuna/lineage-22.2	frameworks/native	topic/shared/lineage-22.2/gles-renderengine-select	Oichkatzelesfrettschen/android_frameworks_native	topic/shared/lineage-22.2/gles-renderengine-select	e82f244ef175dc34345f40d05f878a9192d54290	ls-remote tip
